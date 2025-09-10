@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Text Roguelike Game",
+    "name": "조선몽록",
     "slug": "project-tg",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/appicon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -23,7 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourcompany.textgame",
+      "bundleIdentifier": "com.moledrum.textgame",
+      "buildNumber": "2",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -33,16 +34,24 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.yourcompany.textgame"
+      "package": "com.moledrum.textgame"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_ERROR_RECOVERY",
+      "fallbackToCacheTimeout": 0
     },
     "extra": {
       "eas": {
         "projectId": "c034f295-efc3-4a34-8335-dc754c4f0fa9"
       }
     },
-    "owner": "4losers"
+    "owner": "4losers",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }

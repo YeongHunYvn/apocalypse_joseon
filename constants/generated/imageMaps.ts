@@ -7,6 +7,7 @@ import { ImageSourcePropType } from 'react-native';
 
 export const INLINE_IMAGE_MAP: Record<string, ImageSourcePropType> = {
   "campfire": require('../../assets/images/inline/campfire.webp'),
+  "lake": require('../../assets/images/inline/lake.webp'),
   "snake": require('../../assets/images/inline/snake.webp'),
   "tiger_day": require('../../assets/images/inline/tiger_day.webp'),
   "tiger_night": require('../../assets/images/inline/tiger_night.webp'),

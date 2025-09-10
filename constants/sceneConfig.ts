@@ -19,7 +19,7 @@ export const SCENE_HISTORY_CONFIG = {
     // 애니메이션 프레임 스킵 (텍스트 작성 중일 때)
     SKIP_FRAMES_DURING_ANIMATION: true,
     // 스크롤 이벤트 디바운스 (ms)
-    SCROLL_EVENT_DEBOUNCE_MS: 16,
+    SCROLL_EVENT_DEBOUNCE_MS: 33,
   },
 } as const;
 

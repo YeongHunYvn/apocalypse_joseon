@@ -37,11 +37,11 @@ export const ANIMATION_CONFIG = {
  */
 export const SCENE_ANIMATION_CONFIG = {
   /** 줄 단위 순차 페이드 인 애니메이션의 강도 */
-  REVEAL_INTENSITY: 0.8,
+  REVEAL_INTENSITY: 0.2,
   /** 줄별 Reveal Animation 사이의 지연시간 (밀리초) */
-  DEFAULT_REVEAL_DELAY: 100,
+  DEFAULT_REVEAL_DELAY: 50,
   /** 각 줄의 Reveal Animation 지속시간 (밀리초) */
-  DEFAULT_REVEAL_DURATION: 600,
+  DEFAULT_REVEAL_DURATION: 300,
   /** 문자별 Reveal Animation 사이의 지연시간 (밀리초) */
   DEFAULT_CHAR_DELAY: 30,
   /** 한 줄에서 애니메이션으로 처리할 최대 문자 수 (초과분은 즉시 렌더) */
