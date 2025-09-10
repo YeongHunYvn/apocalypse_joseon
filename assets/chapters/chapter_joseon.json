@@ -712,7 +712,9 @@
       "random_selectable": true,
       "condition": {
         "buffs": {
-          "in": ["fog_light"]
+          "in": [
+            "fog_light"
+          ]
         }
       }
     },
@@ -771,7 +773,9 @@
         ]
       },
       "condition": {
-        "$and": [{}]
+        "$and": [
+          {}
+        ]
       }
     },
     {
@@ -825,8 +829,12 @@
       },
       "condition": {
         "completed_scenes": {
-          "not_in": ["scn_event_past_exam_reunion_2"],
-          "in": ["scn_event_past_exam_5"]
+          "not_in": [
+            "scn_event_past_exam_reunion_2"
+          ],
+          "in": [
+            "scn_event_past_exam_5"
+          ]
         }
       },
       "random_selectable": true
@@ -845,19 +853,25 @@
         "$and": [
           {
             "completed_scenes": {
-              "not_in": ["scn_event_past_exam_reunion_1"]
+              "not_in": [
+                "scn_event_past_exam_reunion_1"
+              ]
             }
           },
           {
             "$or": [
               {
                 "completed_scenes": {
-                  "in": ["scn_event_past_exam_5"]
+                  "in": [
+                    "scn_event_past_exam_5"
+                  ]
                 }
               },
               {
                 "completed_scenes": {
-                  "in": ["scn_event_past_exam_7"]
+                  "in": [
+                    "scn_event_past_exam_7"
+                  ]
                 }
               }
             ]
@@ -900,12 +914,16 @@
         "$or": [
           {
             "buffs": {
-              "in": ["fog_light"]
+              "in": [
+                "fog_light"
+              ]
             }
           },
           {
             "buffs": {
-              "in": ["fog_strong"]
+              "in": [
+                "fog_strong"
+              ]
             }
           }
         ]
@@ -1212,7 +1230,9 @@
           }
         },
         "health": -1,
-        "add_buffs": ["poisoned"]
+        "add_buffs": [
+          "poisoned"
+        ]
       }
     },
     {
@@ -1771,7 +1791,9 @@
         }
       ],
       "effects": {
-        "add_buffs": ["fog_strong"]
+        "add_buffs": [
+          "fog_strong"
+        ]
       }
     },
     {
@@ -1796,7 +1818,10 @@
             }
           }
         }
-      ]
+      ],
+      "effects": {
+        "gold": 3
+      }
     },
     {
       "id": "scn_main_1_2",
@@ -1856,7 +1881,9 @@
         }
       ],
       "effects": {
-        "remove_buffs": ["fog_strong"]
+        "remove_buffs": [
+          "fog_strong"
+        ]
       }
     },
     {
@@ -1869,7 +1896,9 @@
         }
       ],
       "effects": {
-        "remove_buffs": ["fog_strong"]
+        "remove_buffs": [
+          "fog_strong"
+        ]
       }
     },
     {
@@ -2148,7 +2177,9 @@
       },
       "condition": {
         "completed_scenes": {
-          "in": ["scn_main_1_1"]
+          "in": [
+            "scn_main_1_1"
+          ]
         }
       }
     },
@@ -3179,19 +3210,25 @@
           },
           {
             "completed_scenes": {
-              "not_in": ["scn_main_1_leave"]
+              "not_in": [
+                "scn_main_1_leave"
+              ]
             }
           },
           {
             "$or": [
               {
                 "completed_scenes": {
-                  "in": ["scn_main_2_end_fail_2"]
+                  "in": [
+                    "scn_main_2_end_fail_2"
+                  ]
                 }
               },
               {
                 "completed_scenes": {
-                  "in": ["scn_main_2_end_fail_2"]
+                  "in": [
+                    "scn_main_2_end_fail_2"
+                  ]
                 }
               }
             ]
@@ -3519,7 +3556,9 @@
         "exp": {
           "strength": 1
         },
-        "set_flags": ["noise_office"]
+        "set_flags": [
+          "noise_office"
+        ]
       }
     },
     {
@@ -3648,7 +3687,9 @@
         "exp": {
           "strength": 1
         },
-        "set_flags": ["noise_office"]
+        "set_flags": [
+          "noise_office"
+        ]
       }
     },
     {
@@ -3690,7 +3731,9 @@
           },
           "condition": {
             "flags": {
-              "not_in": ["noise_office"]
+              "not_in": [
+                "noise_office"
+              ]
             }
           }
         }
@@ -3790,7 +3833,9 @@
         }
       ],
       "effects": {
-        "set_flags": ["noise_office"]
+        "set_flags": [
+          "noise_office"
+        ]
       }
     },
     {
@@ -3909,7 +3954,9 @@
             "dexterity": 1
           }
         },
-        "set_flags": ["noise_office"]
+        "set_flags": [
+          "noise_office"
+        ]
       }
     },
     {
@@ -3925,7 +3972,9 @@
         }
       ],
       "effects": {
-        "set_flags": ["noise_office"],
+        "set_flags": [
+          "noise_office"
+        ],
         "exp": {
           "skills": {
             "observation": 1
@@ -3988,7 +4037,9 @@
           },
           "agility": 1
         },
-        "set_flags": ["noise_office"]
+        "set_flags": [
+          "noise_office"
+        ]
       }
     },
     {
@@ -4001,7 +4052,9 @@
         }
       ],
       "effects": {
-        "set_flags": ["noise_office"],
+        "set_flags": [
+          "noise_office"
+        ],
         "special_effects": {
           "force_gameover": true
         }
@@ -4059,7 +4112,9 @@
         "exp": {
           "wisdom": 1
         },
-        "set_flags": ["noise_office"]
+        "set_flags": [
+          "noise_office"
+        ]
       }
     },
     {
@@ -4086,7 +4141,9 @@
       ],
       "condition": {
         "flags": {
-          "in": ["noise_office"]
+          "in": [
+            "noise_office"
+          ]
         }
       },
       "conditional_text": [
@@ -4094,7 +4151,9 @@
           "text": "뒤편 관아는 고요했지만, 긴장은 여전히 목을 죄고 있었다.\n조금만 늦었더라면 모든 게 무너졌을 것이다.\n\n여자가 주위를 살피다 낮게 내뱉었다.\n“…여기서 더 움직이긴 위험해. 각자 흩어지는 게 안전해.”\n\n사내는 잠시 머뭇거리더니, 굵은 숨과 함께 고개를 끄덕였다.\n“…제대로 이별 인사도 못하고 헤어지는군.”\n\n소년은 그 말에 킥 하고 웃더니, 두 손을 툭 털며 말했다.\n“이 아저씨 은근 정이 많다니깐. 덕분에 재밌었어, 기회되면 또 보자고!”\n\n잠시 스친 눈빛을 끝으로, 세 사람은 어둠 속으로 흩어졌다.",
           "condition": {
             "flags": {
-              "not_in": ["noise_office"]
+              "not_in": [
+                "noise_office"
+              ]
             }
           }
         }
@@ -4329,6 +4388,274 @@
           "text": "당신은 몸을 돌려 산길을 내달렸다.  \n그러나 뒤에서 땅을 울리는 발걸음이 순식간에 따라붙었다.\n\n거친 숨결이 목덜미를 스쳤고,  \n굵은 발톱이 어깨를 할퀴며 불꽃 같은 통증이 번졌다.\n\n비틀거리며 나아가던 몸이 바위에 부딪혀 굴러떨어졌다.  \n숨이 막히는 고통 속에서 당신의 의식이 점점 멀어진다.",
           "condition": {
             "health": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_poison_1",
+      "text": "몸속이 뜨겁게 달아오른다.\n숨을 고르려 해도 가슴이 답답하고, 팔끝까지 힘이 빠져나간다.\n\n독이 퍼져가는 듯, 시야가 흔들렸다.\n어서 해독하지 않으면 위험할 것 같다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "scn_event_poison_2",
+          "next": {
+            "scene_id": ""
+          },
+          "condition": {
+            "items": {
+              "herb": {
+                "min": 1
+              }
+            }
+          }
+        },
+        {
+          "text": "견뎌낸다",
+          "next": {
+            "scene_id": ""
+          },
+          "probability": {
+            "base_rate": 0.4,
+            "success_next": {
+              "scene_id": "scn_event_poison_3"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_poison_4"
+            }
+          }
+        }
+      ],
+      "condition": {
+        "buffs": {
+          "in": [
+            "poisoned"
+          ]
+        }
+      },
+      "random_selectable": true,
+      "repeatable": true
+    },
+    {
+      "id": "scn_event_poison_2",
+      "text": "급히 주머니를 뒤져 약초를 꺼냈다.\n씹자마자 쓴맛이 입안 가득 퍼졌다.\n\n얼마 지나지 않아, 목을 조이던 열기가 가라앉았다.\n숨이 한결 가벼워지고, 흐릿하던 시야도 또렷해졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아 간다",
+          "next": {
+            "scene_id": ""
+          }
+        }
+      ],
+      "effects": {
+        "remove_buffs": [
+          "poisoned"
+        ],
+        "items": {
+          "herb": -1
+        },
+        "exp": {
+          "skills": {
+            "survival_skills": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_poison_3",
+      "text": "몸속이 뜨겁게 타오르며, 한동안 숨조차 고르기 힘들었다.\n그러나 시간이 흐르자, 서서히 열기가 가라앉기 시작했다.\n\n땀에 젖은 몸이 무겁게 늘어졌지만,\n결정적인 순간은 넘긴 듯했다.\n\n독은 아직 완전히 사라지지 않았으나,\n당장은 살아남을 수 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아 간다",
+          "next": {
+            "scene_id": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_poison_4",
+      "text": "몸속이 뜨겁게 타오르며, 한동안 숨조차 고르기 힘들었다.\n\n이를 악물고 버텼지만,\n곧 다리에 힘이 풀리며 땀이 쏟아졌다.\n\n숨을 몰아쉴 때마다 온몸의 힘이 빠져나가는 게 느껴졌다.\n독이 퍼지고 있다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아 간다",
+          "next": {
+            "scene_id": ""
+          }
+        }
+      ],
+      "effects": {
+        "health": -1
+      }
+    },
+    {
+      "id": "scn_event_cold_1",
+      "text": "해가 지자, 숲은 금세 싸늘해졌다.\n밤바람이 스며들며, 온몸이 저릿하게 떨렸다.\n\n주변은 점점 어두워지고, 숨을 내쉴 때마다 흰 입김이 흩어졌다.\n이제 불을 피우지 않으면, 밤을 버티기 힘들 것 같았다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "불을 피운다",
+          "next": {
+            "scene_id": ""
+          },
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_event_cold_2"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_cold_3"
+            },
+            "modifier": {
+              "skills": {
+                "survival_skills": {
+                  "per_unit": 0.3
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "그냥 버틴다",
+          "next": {
+            "scene_id": ""
+          },
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_event_cold_5"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_cold_6"
+            }
+          }
+        }
+      ],
+      "random_selectable": true,
+      "repeatable": true
+    },
+    {
+      "id": "scn_event_cold_2",
+      "text": "마른 나뭇가지에 불씨가 옮겨 붙었다.\n순식간에 불길이 번져 주위를 환히 밝혔다.\n\n[[campfire]]\n\n따뜻한 기운이 스며들며, 떨리던 몸이 서서히 진정됐다.\n불가에 앉자, 밤공기의 차가움이 한결 멀어졌다.\n\n따뜻한 기운 속에서 무사히 밤을 넘길 수 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아 간다",
+          "next": {
+            "scene_id": ""
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "survival_skills": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_cold_3",
+      "text": "나뭇가지를 모아 불씨를 붙여봤지만,\n습기가 가득해 금세 연기만 피어올랐다.\n\n불길은 번지지 않고 이내 꺼져버렸다.\n찬 바람이 다시 파고들며, 몸은 더 심하게 떨렸다.\n\n당신은 차가운 밤을 떨며 견뎌야 했다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아 간다",
+          "next": {
+            "scene_id": ""
+          }
+        }
+      ],
+      "effects": {
+        "health": -1,
+        "exp": {
+          "skills": {
+            "survival_skills": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_cold_4",
+      "text": "짐 속에서 두툼한 겹옷을 꺼내 걸쳤다.\n솜이 든 옷자락이 바람을 막아 주었다.\n\n차가웠던 몸이 조금씩 풀리며,\n한숨 돌릴 수 있었다.\n\n따뜻한 기운 속에서 무사히 밤을 넘길 수 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아 간다",
+          "next": {
+            "scene_id": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_cold_5",
+      "text": "밤새 바람이 거셌지만,\n몸을 단단히 웅크리고 버텼다.\n\n긴 시간이 흐른 끝에,\n동쪽 하늘이 밝아오자 추위가 조금씩 물러났다.\n\n지쳐 있긴 했지만,\n결국 밤은 넘길 수 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아 간다",
+          "next": {
+            "scene_id": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_cold_6",
+      "text": "몸을 웅크리고 밤을 견뎌냈지만,\n찬 기운이 뼛속까지 파고들었다.\n\n새벽녘이 되자, 온몸이 굳은 듯 저려왔다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아 간다",
+          "next": {
+            "scene_id": ""
+          }
+        }
+      ],
+      "effects": {
+        "health": -1
+      }
+    },
+    {
+      "id": "scn_event_lake_1",
+      "text": "숲 속을 지나던 중, 나무들 사이로 환한 빛이 번졌다.\n그 틈으로 잔잔한 호수가 드러났다.\n\n[[lake]]\n\n맑은 물결이 햇살을 받아 은빛으로 반짝였고,\n고요한 물가엔 새들이 내려앉아 있었다.\n\n물 위에는 잔잔한 파문이 퍼져나갔다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "낚시한다",
+          "next": {
+            "scene_id": "scn_event_lake_fishing_1"
+          }
+        },
+        {
+          "text": "호숫가에서 쉰다",
+          "next": {
+            "scene_id": "scn_event_lake_rest"
+          }
+        }
+      ],
+      "random_selectable": true,
+      "repeatable": true
+    },
+    {
+      "id": "scn_event_lake_fishing_1",
+      "text": "낚싯줄이 잔잔한 물 위로 가라앉았다.\n물결에 맞춰 찌가 천천히 흔들렸다.\n\n숲 속 바람과 물소리만이 이어졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "새 선택지",
+          "next": {
+            "scene_id": ""
+          }
+        },
+        {
+          "text": "새 선택지",
+          "next": {
+            "scene_id": ""
           }
         }
       ]
