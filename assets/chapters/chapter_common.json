@@ -1,0 +1,67 @@
+{
+  "id": "chapter_common",
+  "name": "공통 시나리오",
+  "type": "story",
+  "floor": 0,
+  "scenes": [
+    {
+      "id": "scn_game_start",
+      "type": "main",
+      "text": "피곤하다. 잠을 자야겠다.",
+      "choices": [
+        {
+          "text": "눈을 감는다",
+          "next": {
+            "chapter_id": "chapter_joseon",
+            "scene_id": "scn_main_1_intro"
+          }
+        }
+      ],
+      "effects": {
+        "special_effects": {
+          "rest_room_cleanup": true
+        }
+      }
+    },
+    {
+      "effects": {
+        "special_effects": {
+          "rest_room_cleanup": true
+        }
+      },
+      "id": "scn_game_over",
+      "type": "event",
+      "text": "몽롱한 눈을 뜨자, 모든 기억이 흐릿하게 사라졌다.\n\n모든 것이 끝난 기분이 든다.",
+      "choices": [
+        {
+          "text": "잠에 든다",
+          "condition": { "current_floor": 1 },
+          "next": {
+            "chapter_id": "chapter_joseon",
+            "scene_id": "scn_main_1_1"
+          }
+        },
+        {
+          "text": "잠에 든다",
+          "condition": { "current_floor": 2 },
+          "next": {
+            "chapter_id": "chapter_rest_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_game_victory",
+      "type": "main",
+      "text": "{{glow}}끝!{{glow}}",
+      "choices": [
+        {
+          "text": "처음으로 돌아간다",
+          "next": {
+            "scene_id": "scn_game_start"
+          }
+        }
+      ]
+    }
+  ]
+}

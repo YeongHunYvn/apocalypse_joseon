@@ -1,0 +1,4337 @@
+{
+  "id": "chapter_joseon",
+  "name": "안개의 조선",
+  "type": "story",
+  "floor": 1,
+  "scenes": [
+    {
+      "id": "scn_lonelyman_intro",
+      "text": "scn_lonelyman_intro\n\n장터 어귀, 노파 하나가 당신을 뚫어지게 바라본다.\n주름진 눈가가 번뜩이며, 마치 오래 찾던 물건이라도 발견한 듯 다가온다.\n\n“어이구, 이리도 반듯한 사내가 어디서 뚝 떨어졌누.”\n\n노파의 목소리는 떨리지만, 눈빛은 간절하다.\n\n“우리 집 아들놈이… 나이 사십이 다 되도록 혼자여. 말도 더듬고, 꾸미는 법도 모르고… 에휴.”\n\n손수건으로 눈가를 훔치다가, 슬그머니 당신 손목을 붙든다.\n\n“한번만, 도와주면 안 되겠소?”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "도와주겠다",
+          "next": {
+            "scene_id": "scn_lonelyman_meet"
+          }
+        }
+      ],
+      "random_selectable": true,
+      "condition": {
+        "charisma": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "id": "scn_lonelyman_meet",
+      "text": "노파가 삐걱거리는 문을 열자, 희미한 어둠 속에 남자가 웅크려 앉아 있었다.\n머리는 헝클어져 있고, 방 안 공기는 눅눅하다.\n\n그는 눈길조차 마주치지 못하며 중얼거린다.\n\n“세상은… 불공평허다… 잘난 얼굴 없이는, 아무도… 나 같은 놈 안 봐주지…”\n\n말끝이 흐르고, 어깨는 점점 더 움츠러든다.\n\n노파는 애써 웃음을 짓지만, 눈가에 힘이 없다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "못생겼다며 조롱한다",
+          "next": {
+            "scene_id": "scn_lonelyman_mock"
+          }
+        },
+        {
+          "text": "조언해준다",
+          "next": {
+            "scene_id": "scn_lonelyman_advice"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_lonelyman_mock",
+      "text": "당신의 입가에 비웃음이 스친다.\n이렇게 못생긴 사람은 처음 본다며 조롱하자, 노총각의 얼굴이 벌겋게 달아오른다.\n\n“나도 알아! 나도 못생겼다는 거 알아! 근데… 왜! 왜 세상은 나한테만 이리도 차가운거야!”\n\n노총각이 손에 잡히는 베개를 던지고, 뒤엉킨 이불을 발로 차며 소리친다.\n\n순간, 노파가 지팡이를 꾹 짚으며 일어선다.\n\n“이 못된 사람 같으니! 우리 집에서 당장 나가!”\n\n주름진 손이 당신을 밀쳐내고, 삐걱거리는 문이 쾅 닫힌다.\n\n밖으로 쫓겨난 당신은 다시 길을 나선다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "subtract",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_lonelyman_teach",
+      "text": "당신은 노총각을 앉혀두고 머리칼부터 정리하기 시작한다.\n먼지 쌓인 빗이 머리카락을 스칠 때마다, 뭉친 기름기가 번들거린다.\n헌옷을 벗기고 깨끗한 옷을 입히자, 방 안 공기마저 달라진 듯하다.\n\n노총각은 거울 속 낯선 자신의 모습에 얼떨떨해한다.\n“이게… 나라고…?”\n붉어진 귓불이 흔들리고, 두 손은 허둥댄다.\n\n옆에서 지켜보던 노파는 눈을 동그랗게 뜨더니, 손수건으로 얼굴을 가린다.\n“아이고야… 우리 아들이 사람 꼴이 났구먼…”\n주름진 눈가에 눈물이 맺히지만, 웃음소리도 함께 새어 나온다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "밖으로 나가봐라",
+          "next": {
+            "scene_id": "scn_lonelyman_goout"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_lonelyman_advice",
+      "text": "당신의 시선이 차분히 그를 향한다.\n노총각은 움찔하며 고개를 숙이지만, 묵묵히 들어주는 기색에 눈동자가 흔들린다.\n\n“외모… 아니, 다들 그거만 본다니까…”\n\n그의 목소리는 갈라지고, 손가락은 바닥을 파고든다.\n\n당신은 단호하게, 꾸밈이나 얼굴보다 태도와 마음이 더 중요하다는 뜻을 전한다.\n노총각은 놀란 듯 당신을 바라보다가, 이내 얼굴이 붉어진다.\n\n“나도… 나도 달라질 수 있을까…?”\n\n작게 중얼거린 그의 눈빛에는 처음으로 희미한 불빛이 스쳤다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "꾸미는 법을 알려주겠다",
+          "next": {
+            "scene_id": "scn_lonelyman_teach"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_lonelyman_goout",
+      "text": "당신은 단장한 노총각과 함께 집을 나선다.\n햇볕에 눈을 가린 그는 긴장한 듯 어깨를 잔뜩 움츠린다.\n노파는 뒤에서 손을 모아 꼭 쥐고, 발걸음을 따라붙는다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "밖을 돌아다닌다",
+          "next": {
+            "scene_id": "scn_lonelyman_around"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_lonelyman_around",
+      "text": "골목 어귀에서 아이들 몇이 공기를 굴리다, 당신과 노총각을 발견한다.\n순간, 눈이 동그래지더니 키득거리며 수군댄다.\n\n“야, 저 아저씨 머리 빗었나 봐!”\n“옷도 새 거네! 하하하!”\n\n노총각의 얼굴이 순식간에 벌겋게 달아오른다.\n손은 옷깃을 꼭 움켜쥐고, 발끝만 내려다본다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "다독인 후, 더 돌아다닌다",
+          "next": {
+            "scene_id": "scn_lonelyman_gomore1"
+          }
+        },
+        {
+          "text": "그만하고 돌아간다",
+          "next": {
+            "scene_id": "scn_lonelyman_stop"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_lonelyman_gomore1",
+      "text": "장터에 들어서자 사람들의 시선이 슬며시 모여든다.\n노총각은 긴장한 듯 어깨를 움츠리지만, 예전처럼 도망치지는 않는다.\n\n“어머, 저 집 아들 아닌가? 사람이 달라졌네.”\n“그러게, 눈빛이 훨씬 또렷해졌어.”\n\n수군거림이 들려오자, 노총각은 얼굴이 붉어지면서도 입술을 꼭 깨문다.\n눈동자에 낯선 빛이 스치는 순간, 당신과 눈이 마주친다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "더 돌아다닌다",
+          "next": {
+            "scene_id": "scn_lonelyman_gomore2"
+          }
+        },
+        {
+          "text": "그만하고 돌아간다",
+          "next": {
+            "scene_id": "scn_lonelyman_stop"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_lonelyman_gomore2",
+      "text": "장터 끝, 물동이를 인 여인이 발길을 멈춘다.\n노총각과 눈이 마주치자, 그녀가 먼저 인사를 건넨다.\n“전에 뵌 적 있는 것 같은데요…?”\n\n노총각은 입술을 달싹이다가, 겨우 말을 뱉는다.\n“저… 저기… 네, 아마… 예…”\n목소리가 떨리고, 시선은 허공을 헤맨다.\n\n여인은 애써 미소 지으며 고개를 끄덕인다.\n짧고 더딘 대화가 이어지자, 당신은 조용히 발걸음을 돌린다.\n뒤에서 노총각의 어눌한 목소리와 여인의 부드러운 대답이 실낱같이 흘러나온다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "자리를 비켜준다",
+          "next": {
+            "scene_id": "scn_lonelyman_finish"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_lonelyman_finish",
+      "text": "당신이 자리를 비켜나오자, 잠시 뒤 노총각이 더듬거리며 대화를 이어가는 소리가 희미하게 들린다.\n골목 어귀에서 기다리던 노파가 다가와, 주름진 얼굴에 안도 섞인 미소를 지었다.\n\n“아이고, 정말 고맙소. 우리 아들이 이렇게 사람 앞에 서 본 게 언제더라…”\n떨리는 손이 품속에서 작은 보자기를 꺼낸다.\n안에는 반짝이는 엽전 몇 닢이 고이 싸여 있다.\n\n노파는 그것을 당신 손에 꼭 쥐여주며, 눈가를 훔쳤다.\n“부디 받아주시오. 내 정성이니.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "gold": 1,
+        "mind": null
+      }
+    },
+    {
+      "id": "scn_lonelyman_stop",
+      "text": "당신은 더 이상 돌아다니지 않기로 하고 발길을 돌린다.\n노총각은 어깨를 잔뜩 움츠린 채 고개를 숙였지만, 예전처럼 도망치듯 달아나지는 않았다.\n\n집에 도착하자, 노파가 그의 어깨를 토닥이며 미소를 지었다.\n“오늘은 이만하면 됐지. 이렇게라도 나선 게 어디냐.”\n노총각은 대답 대신 작게 고개를 끄덕였다.\n\n노파는 당신 쪽으로 다가와, 품에서 작은 보자기를 꺼낸다.\n그 안에는 엽전 몇 닢이 곱게 싸여 있었다.\n“정말 고맙소. 당신이 아니었으면 우리 아들은 방구석에만 있었을 게야.”  ",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "gold": 1
+      }
+    },
+    {
+      "id": "scn_herbalist_encounter",
+      "text": "가파른 산길, 덤불 사이에 한 남자가 쓰러져 있다.\n옆구리는 피에 젖었고, 손아귀는 그 상처를 필사적으로 움켜쥔다.\n당신이 다가서자 그는 힘겹게 고개를 들며 중얼거린다.\n\n“제발… 도와주시오.”\n\n그의 허리춤에는 약초 주머니가 달려 있어, 희미한 풀 냄새가 풍긴다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "치료한다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_herbalist_heal"
+            },
+            "failure_next": {
+              "scene_id": "scn_herbalist_failheal"
+            },
+            "modifier": {
+              "skills": {
+                "survival_skills": {
+                  "per_unit": 0.09
+                }
+              },
+              "stats": {
+                "wisdom": {
+                  "per_unit": 0.045
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "마을까지 부축한다",
+          "probability": {
+            "base_rate": 0.4,
+            "success_next": {
+              "scene_id": "scn_herbalist_help"
+            },
+            "failure_next": {
+              "scene_id": "scn_herbalist_failhelp"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.05
+                }
+              },
+              "skills": {
+                "survival_skills": {
+                  "per_unit": 0.1
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "약초를 빼앗는다",
+          "next": {},
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_herbalist_trick"
+            },
+            "failure_next": {
+              "scene_id": "scn_herbalist_trick_fail"
+            },
+            "modifier": {
+              "skills": {
+                "steal": {
+                  "per_unit": 0.075
+                }
+              },
+              "stats": {
+                "agility": {
+                  "per_unit": 0.04
+                }
+              }
+            }
+          }
+        }
+      ],
+      "random_selectable": true
+    },
+    {
+      "id": "scn_herbalist_heal",
+      "text": "당신은 남자의 허리춤에서 약초 주머니를 꺼내 상처에 눌렀다.\n풀잎 향이 번지며 피가 조금씩 멎고, 그의 호흡도 서서히 가라앉는다.\n\n남자는 힘겹게 몸을 일으켜 앉는다.\n“이 정도면… 혼자 마을까지 갈 수 있겠소.”\n\n그는 고개를 숙여 감사의 뜻을 전한 뒤, 비틀거리는 걸음을 옮긴다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "survival_skills": 1
+          },
+          "wisdom": 1
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_herbalist_failheal",
+      "text": "당신은 약초 주머니를 꺼내 상처에 눌렀다.\n풀잎 향이 퍼지지만, 피는 멎지 않고 손바닥을 타고 흘러내린다.\n\n남자의 호흡은 점점 거칠어지고,\n얼굴은 잿빛으로 바래 간다.\n\n마지막 순간, 그의 손끝이 허공을 움켜쥔다가 힘없이 떨어진다.\n산길에는 풀 향만이 남아, 밤바람에 허무하게 흩어진다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "survival_skills": 1
+          }
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_herbalist_help",
+      "text": "당신은 그를 들쳐메고 마을까지 내려왔다.\n불빛 사이로 의원이 달려 나오자, 남자를 재빨리 부축해 안으로 들인다.\n\n“상처가 깊지만… 다행히 늦지 않았습니다.”\n의원의 말에 남자는 안도의 숨을 내쉰다.\n\n잠시 후, 그는 힘겹게 몸을 일으켜 당신을 바라본다.\n“당신 덕분에 목숨을 건졌소. 드릴 게 이것뿐이오.”\n\n허리춤에서 꺼낸 신선한 약초 한 줌이 당신 손에 놓인다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "약초를 받는다",
+          "next": {
+            "scene_id": "scn_herbalist_reward_herb"
+          }
+        },
+        {
+          "text": "사양한다",
+          "next": {
+            "scene_id": "scn_herbalist_reward_friendship"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "strength": 1,
+          "skills": {
+            "survival_skills": 1
+          }
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_herbalist_failhelp",
+      "text": "당신은 그의 팔을 어깨에 걸고 산길을 내려왔다.\n숨이 점점 거칠어지고, 그의 몸은 점점 무거워진다.\n\n마을 불빛이 희미하게 보이려는 순간,\n남자의 다리가 풀리며 그대로 힘없이 쓰러졌다.\n\n의원이 달려와 붙잡았지만,\n이미 그의 눈빛은 흐려져 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ],
+        "exp": {
+          "skills": {
+            "survival_skills": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_herbalist_reward_herb",
+      "text": "당신은 남자가 내민 약초를 조심스레 받아들었다.\n풋풋한 향이 손끝에 스며들고, 아직 따뜻한 체온이 느껴진다.\n\n“부디… 안전한 여정이 되길.”\n남자는 힘겹게 웃으며 몸을 돌린다.\n\n당신은 고개를 끄덕이고, 다시 길 위로 발걸음을 옮겼다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "items": {
+          "herb": 1
+        }
+      }
+    },
+    {
+      "id": "scn_herbalist_reward_friendship",
+      "text": "당신은 내민 약초를 받지 않고, 조용히 손을 거두었다.\n남자의 눈이 잠시 흔들리더니, 곧 미소와 함께 고개를 끄덕인다.\n\n“은혜는 평생 잊지 않겠소.”\n\n그 말을 뒤로 하고, 당신은 다시 길 위로 발걸음을 옮겼다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "affinity": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_herbalist_trick",
+      "text": "당신은 허리춤에 매달린 주머니를 단번에 낚아챘다.\n풀잎 향이 짙게 번지자, 남자의 손이 허공을 더듬는다.\n\n“안… 돼… 그건…!”\n\n힘이 빠진 목소리가 산길에 흩어진다.\n남자의 눈동자가 흐려지고, 몸은 덤불 속으로 기울어 간다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "subtract",
+            "value": 1
+          }
+        ],
+        "exp": {
+          "skills": {
+            "steal": 1
+          },
+          "agility": 1
+        },
+        "items": {
+          "herb": 1
+        },
+        "gold": 1
+      }
+    },
+    {
+      "id": "scn_herbalist_trick_fail",
+      "text": "당신은 주머니끈을 거칠게 잡아당겼다.\n순간, 남자의 몸이 균형을 잃고 비탈길 아래로 굴러 떨어진다.\n\n“끄…윽…!”\n짧은 신음이 메아리치더니, 곧 아무 소리도 들리지 않았다.\n\n약초 주머니는 함께 사라졌다.\n당신은 허무한 마음으로 산길을 등지고 돌아선다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "mind": -1,
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_event_tavern_1",
+      "text": "긴 길 끝, 허름한 기와집에 붉은 등불이 걸려 있다.\n문 앞에는 ‘주막’이라 적힌 널빤지가 삐뚤게 매달려 있다.\n안에서는 사람들 웃음소리와 술잔 부딪히는 소리가 희미하게 새어 나온다.\n잠시 들러 쉴 수도 있을 것 같다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "주막으로 들어간다",
+          "next": {
+            "scene_id": "scn_event_tavern_2"
+          }
+        },
+        {
+          "text": "그냥 지나친다",
+          "next": {
+            "scene_id": "scn_event_tavern_leave_1"
+          }
+        }
+      ],
+      "random_selectable": true,
+      "repeatable": true
+    },
+    {
+      "id": "scn_event_tavern_2",
+      "text": "문을 열고 들어서자, 따스한 불빛과 술 냄새가 가득 번진다.\n주인은 반갑게 맞으며 자리를 권한다.\n\n“길손 같으니, 오늘 밤은 쉬어가시오. 식사만 하셔도 좋고.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "다시 나간다",
+          "next": {
+            "scene_id": "scn_event_tavern_leave_2"
+          }
+        },
+        {
+          "text": "하루 묵는다 (재화 x 2)",
+          "next": {
+            "scene_id": "scn_event_tavern_3"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "text": "식사만 한다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_tavern_4"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1,
+              "max": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_tavern_3",
+      "text": "돈을 건네자 주모가 작은 방을 열어준다.\n짚이 깔린 자리에 몸을 누이니 곧 깊은 피로가 풀린다.\n호롱불이 깜빡이며, 조용한 밤이 흘러간다.\n\n다음 날 새벽, 닭 울음소리와 함께 방 문이 밝게 물든다.\n기운이 한결 가벼워진 걸 느끼며 다시 길을 나선다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "health": 1,
+        "mind": 1,
+        "gold": -2
+      }
+    },
+    {
+      "id": "scn_event_tavern_4",
+      "text": "주모가 내어온 따뜻한 밥상에 앉는다.\n김이 오르는 국과 고소한 육포, 떡 한 접시가 놓인다.\n허기를 달래자, 조금은 힘이 돌아오는 듯하다.\n\n그리 오래 머무를 수는 없어 자리를 털고 일어난다.\n문밖으로 나와 다시 길을 나선다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "gold": -1,
+        "health": 1
+      }
+    },
+    {
+      "id": "scn_event_tavern_leave_2",
+      "text": "따스한 불빛과 술 내음이 잠시 마음을 흔든다.\n그러나 머물 필요는 없다고 느끼며, 곧 자리를 털고 일어난다.\n등 뒤로 주인의 아쉬운 시선이 닿지만, 문을 나서자 다시 길가의 공기가 스며든다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "conditional_text": [
+        {
+          "text": "주인은 웃으며 술과 음식을 내오려 했지만,\n주머니를 더듬어도 동전 하나 나오지 않는다.\n머쓱하게 고개를 숙이고, 발길을 돌려 주막을 나선다.",
+          "condition": {
+            "gold": 0
+          }
+        }
+      ],
+      "condition": {
+        "gold": {
+          "max": 4,
+          "min": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_tavern_leave_1",
+      "text": "잠시 눈길이 머물렀지만, 지금은 쉬어야 할 이유가 없다.\n등불 아래 서성이다 이내 발길을 돌린다.\n뒷골목의 소란스러운 웃음소리가 점점 멀어진다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_shaman_1",
+      "text": "안개에 젖은 길가에 허름한 천막이 서 있다.\n그 앞에 앉은 무속인이 손바닥만 한 부적과 약초를 늘어놓고 있다.\n그는 낮게 중얼거리다 고개를 들어, 곧장 이쪽을 바라본다.\n“안개 속에선 혼이 쉽게 흔들리지. 부적 하나 챙겨가게.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "부적을 산다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_shaman_2"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1,
+              "max": 4
+            }
+          }
+        },
+        {
+          "text": "약초를 산다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_shaman_3"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1,
+              "max": 4
+            }
+          }
+        },
+        {
+          "text": "그냥 지나간다"
+        }
+      ],
+      "random_selectable": true,
+      "repeatable": true
+    },
+    {
+      "id": "scn_event_shaman_2",
+      "text": "무속인이 가늘게 웃으며 부적을 내민다.\n종이 위에 번진 붉은 글씨가 희미하게 빛을 머금는다.\n“잘 간직하게.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "나아간다"
+        }
+      ],
+      "effects": {
+        "gold": -1,
+        "items": {
+          "talisman": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_shaman_3",
+      "text": "무속인이 작은 꾸러미를 꺼내 건넨다.\n풀냄새가 짙게 배어 있는 약초다.\n“몸에 두면 도움이 될 게다.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "나아간다",
+          "next": {}
+        }
+      ],
+      "effects": {
+        "items": {
+          "herb": 1
+        },
+        "gold": -1
+      }
+    },
+    {
+      "id": "scn_event_shaman_4",
+      "text": "잠시 눈길을 주었지만, 딱히 필요한 물건은 없어 보인다.\n발걸음을 돌리자 무속인의 시선이 따라오지만, 걸음을 재촉하자 곧 시야에서 멀어졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "나아간다"
+        }
+      ],
+      "condition": {
+        "gold": {
+          "min": 1,
+          "max": 4
+        }
+      },
+      "conditional_text": [
+        {
+          "text": "내심 필요한 물건이 눈에 띄었지만, 손에 쥔 돈이 없다.\n망설이는 기색을 본 무속인이 씁쓸히 웃는다.\n“가진 게 없으면 인연도 없는 법이지.”\n\n발걸음을 돌려 다시 길을 나섰다.",
+          "condition": {
+            "gold": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_past_exam_1",
+      "text": "안개가 길을 짙게 덮고 있었다.\n나무 그림자조차 흐릿한 가운데, 사람의 형체가 어슴푸레 떠올랐다.\n\n내가 몇 걸음 다가서자, 그는 움찔하며 고개를 들었다.\n허름한 유생 복색의 청년이었다.\n눈가에는 피로가 묻어 있었고, 떨리는 손에는 책보가 들려 있었다.\n\n“혹시… 한양 가시는 분입니까?”\n\n청년의 목소리는 낮고 망설임이 섞여 있었다.\n\n“이 길이 맞긴 한가요…?”\n\n그의 발치에는 뒤엉킨 발자국들이 흙먼지에 가려 남아 있었다.\n청년은 서성였지만, 앞으로 나아가지도 물러서지도 않았다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "무슨 일인가",
+          "next": {
+            "scene_id": "scn_event_past_exam_2"
+          }
+        },
+        {
+          "text": "가진 것을 빼앗는다 ",
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_event_past_exam_3"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_past_exam_4"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "martial_arts": {
+                  "per_unit": 0.075
+                }
+              },
+              "items": {
+                "sword": {
+                  "per_unit": 0.075
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "그냥 지나친다"
+        }
+      ],
+      "random_selectable": true,
+      "condition": {
+        "buffs": {
+          "in": ["fog_light"]
+        }
+      }
+    },
+    {
+      "id": "scn_event_past_exam_2",
+      "text": "청년은 시선을 피하지 않았다.  \n입술은 바싹 말라 있었고, 손등에 작은 상처가 드러났다.  \n책보를 움켜쥔 손이 떨렸다.\n\n“며칠째 안개뿐이군요.”\n\n그의 숨결이 허공에 스며들었다.\n\n“과거를 보러 가는 길입니다.\"\n\"어머니는 제 뒷모습만 보고도 눈물을 삼키셨고, 여동생은 밤새 부적을 접어 저를 보냈습니다.\"\n그런데… 돌아오지 못한 선비들 얘기만 들려옵니다.”\n\n그는 내 눈을 바라봤다.\n\n“정말… 가야 할까요? 이대로 돌아가면, 가족에게 뭐라 말해야 할지 모르겠습니다.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "한양으로 가라",
+          "next": {
+            "scene_id": "scn_event_past_exam_5"
+          }
+        },
+        {
+          "text": "집으로 돌아가라",
+          "next": {
+            "scene_id": "scn_event_past_exam_6"
+          }
+        },
+        {
+          "text": "나도 모른다",
+          "next": {
+            "scene_id": "scn_event_past_exam_7"
+          }
+        }
+      ],
+      "condition": {}
+    },
+    {
+      "id": "scn_event_past_exam_3",
+      "text": "손길이 닿자 청년은 뒤로 물러섰다.\n\n“무슨—!”\n\n말이 끝나기도 전에 어깨가 밀렸다.\n책보가 땅에 떨어지고, 청년은 주저앉았다.\n\n가쁜 숨 사이로, 그의 손이 떨렸다.\n“그건… 어머니가…”\n\n그러나 저항은 이어지지 못했다.\n주머니 속에서 낡은 돈지갑 하나가 나왔다.\n엽전 세 닢, 구겨진 부적이 들어 있었다.\n\n청년은 땅바닥에 손을 뻗었지만, 잡을 수 없었다.\n그 울음이 안개 속으로 번졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "strength": 1,
+          "skills": {
+            "martial_arts": 1
+          }
+        },
+        "gold": 1,
+        "items": {
+          "talisman": 1
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "subtract",
+            "value": 1
+          }
+        ]
+      },
+      "condition": {
+        "$and": [{}]
+      }
+    },
+    {
+      "id": "scn_event_past_exam_4",
+      "text": "손을 뻗자 청년은 몸을 틀었다. 손목이 꺾이며 관절이 비틀렸다.\n\n“그만두십시오.”\n\n목소리는 떨렸지만, 눈빛만큼은 흔들리지 않았다.\n\n책보를 끌어안은 손끝에 힘이 들어갔다.\n지친 기색은 사라지고, 그 속에서 오래 눌러왔던 의지가 드러났다.\n\n“당신 같은 자들이 길을 막고,\"\n\"당신 같은 자들이 어머니의 부적을 짓밟으려 하며,\"\n\"당신 같은 자들이—”\n“—그래서 한양이 썩는 겁니다.”\n\n청년은 당신을 밀쳐내고 일어섰다. 책보를 안은 채, 안개 속으로 한 걸음 내딛었다.\n“더는, 이런 걸 그냥 두지 않겠습니다.”\n\n안개는 그를 삼켜갔고, 당신은 땅에 쓰러져 그 광경을 지켜보았다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "health": -1,
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "subtract",
+            "value": 1
+          }
+        ],
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_past_exam_leave_1",
+      "text": "당신은 말을 무시한 채 걸음을 옮겼다.  \n청년은 잠시 바라보다가, 고개를 숙였다.  \n\n책보를 고쳐 든 그는 망설임 끝에 발걸음을 뗐다.  \n그 방향은 알 수 없었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_past_exam_reunion_1",
+      "text": "붉은 등불 아래, 낯익은 얼굴이 보였다.\n안개 속에서 만났던 그 과거 응시자였다.\n\n“기억하십니까? 그날… 저를 그냥 두지 않으셨지요.”\n“과거는 무사히 치렀습니다. 결과는 아직 모르지만… 용기를 낼 수 있었던 건 당신 덕이었습니다.”\n\n그는 짧게 웃으며 봉투를 내밀었다.\n봉투 안에는 부적 여러 장이 들어 있었다.\n\n“여동생이 접어주었던 부적입니다. 이제 당신께 드리겠습니다.”\n\n청년은 고개를 숙이고 인파 속으로 사라졌다.\n남은 건 손에 쥔 봉투 뿐이었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "items": {
+          "talisman": 2
+        }
+      },
+      "condition": {
+        "completed_scenes": {
+          "not_in": ["scn_event_past_exam_reunion_2"],
+          "in": ["scn_event_past_exam_5"]
+        }
+      },
+      "random_selectable": true
+    },
+    {
+      "id": "scn_event_past_exam_reunion_2",
+      "text": "젖은 풀숲 사이, 무언가 쓰러져 있었다.\n\n다가가자 사람의 형체가 드러난다.\n허름한 유생 차림. 흙에 얼굴이 반쯤 묻혀 있고, 손끝은 이미 굳어 있었다.\n\n가슴은 차갑게 식어 있었다.\n\n곁에는 찢어진 책보 자락이 젖어 누워 있었다.\n며칠 전, 길목에서 만났던 그 청년.\n돌아갈지 말지 고민하던 그 사내였다.\n\n책보도, 부적도, 저고리도… 그의 손엔 아무것도 남아있지 않았다.\n\n안개는 말없이 흘렀다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "random_selectable": true,
+      "condition": {
+        "$and": [
+          {
+            "completed_scenes": {
+              "not_in": ["scn_event_past_exam_reunion_1"]
+            }
+          },
+          {
+            "$or": [
+              {
+                "completed_scenes": {
+                  "in": ["scn_event_past_exam_5"]
+                }
+              },
+              {
+                "completed_scenes": {
+                  "in": ["scn_event_past_exam_7"]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_1",
+      "text": "안개가 옅게 내려앉은 길, 어둠 속에 등불이 주르르 이어졌다.\n낯선 소리가 귀에 스며들어 고개를 돌리니, 길가에 작은 시장이 열려 있었다.\n\n사람은 없다.\n짧은 뿔이 난 사내, 얼굴 없는 여인, 그림자로만 된 아이가 좌판에 앉아 물건을 사고팔고 있었다.\n\n그때, 한 도깨비가 앞으로 걸어 나왔다.\n붉은 눈동자가 반짝이며, 예의 바른 미소가 입가에 걸린다.\n\n“오, 나그네시군요. 낯선 길에서 이런 시장을 만나기는 쉽지 않습니다.”\n“저는… 기억과 경험을 사고파는 장사꾼이지요. 단 한 번뿐입니다. 거래하시겠습니까?”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "기억을 판다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_2"
+          }
+        },
+        {
+          "text": "낯선 이의 기억을 산다 (재화 x 2)",
+          "next": {
+            "scene_id": "scn_event_dokkebi_3"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 2,
+              "max": 4
+            }
+          }
+        },
+        {
+          "text": "떠난다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_leave_1"
+          }
+        }
+      ],
+      "condition": {
+        "$or": [
+          {
+            "buffs": {
+              "in": ["fog_light"]
+            }
+          },
+          {
+            "buffs": {
+              "in": ["fog_strong"]
+            }
+          }
+        ]
+      },
+      "random_selectable": true
+    },
+    {
+      "id": "scn_event_dokkebi_2",
+      "text": "도깨비는 기다렸다는 듯 고개를 끄덕였다.  \n“기억이란 곧 힘이지요. 무엇을 내어주실지는 나그네께서 정하셔야 합니다.”\n\n그의 손바닥 위, 안개가 네 갈래로 흩어지며 작은 환영을 맺는다.\n\n- 피비린내 나는 싸움 속, 주먹을 움켜쥐던 기억.\n- 산등성이를 내달리던 두 다리의 기억.\n- 밤새 책을 펼치던 등잔불 아래의 기억.\n- 낯선 이와 마주 앉아 웃던 따스한 기억.\n\n도깨비의 눈동자가 반짝였다.  \n“단 한 번뿐이지요. 무엇을 놓으시겠습니까?”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "피 묻은 싸움의 기억을 판다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_4_1"
+          }
+        },
+        {
+          "text": "산등성이를 달리던 기억을 판다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_4_2"
+          }
+        },
+        {
+          "text": "등잔불 아래 책을 읽던 기억을 판다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_4_3"
+          }
+        },
+        {
+          "text": "웃으며 대화를 나누던 기억을 판다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_4_4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_dokkebi_3",
+      "text": "엽전을 내밀자, 도깨비의 손바닥 위로 안개가 모여 네 장면이 피어났다.  \n각각은 누군가의 삶에서 뜯겨 나온 파편 같았다.\n\n- 장병기를 휘두르며 땀을 흘리던 사내의 기억.\n- 돌계단을 내달리던 젊은 여인의 기억.\n- 책장을 넘기며 조용히 미소 짓던 노인의 기억.\n- 장터에서 떠들썩이 흥정을 벌이던 상인의 기억.\n\n도깨비는 낮게 웃었다.  \n“본디 누구의 것이었는지는 중요치 않지요. 이제는 나그네의 몫이 될 테니.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "사내의 무예 기억을 산다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_5_1"
+          }
+        },
+        {
+          "text": "여인의 달리기 기억을 산다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_5_2"
+          }
+        },
+        {
+          "text": "노인의 독서 기억을 산다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_5_3"
+          }
+        },
+        {
+          "text": "상인의 흥정 기억을 산다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_5_4"
+          }
+        }
+      ],
+      "effects": {
+        "gold": -2
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_leave_1",
+      "text": "나는 도깨비의 말을 외면한 채 발걸음을 옮겼다.  \n등불 사이로 비죽 웃던 그림자들이 뒤에서 흩어지듯 사라져간다.\n\n잠시 뒤, 등불도, 좌판도, 웃음소리도 자취를 감췄다.  \n뒤돌아본 길에는 그저 풀벌레 소리만 깃든 빈 공터가 있을 뿐이었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_dokkebi_4_1",
+      "text": "내가 고른 기억이 도깨비의 손에 스며들자, 머릿속이 텅 빈 듯 흔들린다.  \n잠시 공허가 스치고 지나가자, 도깨비가 흐뭇한 듯 고개를 끄덕였다.\n\n그는 품속에서 묵직한 주머니를 꺼내 건넸다.  \n짤랑— 은은하게 울리는 소리, 낡은 **엽전 다발**이 손에 쥐어진다.\n\n“기억은 그만큼 값진 것이지요. 이 정도면 공정한 거래라 생각합니다.”\n\n그가 미소 짓는 순간, 시장의 등불이 하나둘 꺼져갔다.  \n상인도, 좌판도, 웃음소리도 안개 속으로 녹아 사라진다.\n\n뒤돌아보니, 남은 건 풀벌레 소리뿐인 텅 빈 공터였다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "strength": -10,
+        "gold": 2
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_4_2",
+      "text": "내가 고른 기억이 도깨비의 손에 스며들자, 머릿속이 텅 빈 듯 흔들린다.  \n잠시 공허가 스치고 지나가자, 도깨비가 흐뭇한 듯 고개를 끄덕였다.\n\n그는 품속에서 묵직한 주머니를 꺼내 건넸다.  \n짤랑— 은은하게 울리는 소리, 낡은 **엽전 다발**이 손에 쥐어진다.\n\n“기억은 그만큼 값진 것이지요. 이 정도면 공정한 거래라 생각합니다.”\n\n그가 미소 짓는 순간, 시장의 등불이 하나둘 꺼져갔다.  \n상인도, 좌판도, 웃음소리도 안개 속으로 녹아 사라진다.\n\n뒤돌아보니, 남은 건 풀벌레 소리뿐인 텅 빈 공터였다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "agility": -10,
+        "gold": 2
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_4_3",
+      "text": "내가 고른 기억이 도깨비의 손에 스며들자, 머릿속이 텅 빈 듯 흔들린다.  \n잠시 공허가 스치고 지나가자, 도깨비가 흐뭇한 듯 고개를 끄덕였다.\n\n그는 품속에서 묵직한 주머니를 꺼내 건넸다.  \n짤랑— 은은하게 울리는 소리, 낡은 **엽전 다발**이 손에 쥐어진다.\n\n“기억은 그만큼 값진 것이지요. 이 정도면 공정한 거래라 생각합니다.”\n\n그가 미소 짓는 순간, 시장의 등불이 하나둘 꺼져갔다.  \n상인도, 좌판도, 웃음소리도 안개 속으로 녹아 사라진다.\n\n뒤돌아보니, 남은 건 풀벌레 소리뿐인 텅 빈 공터였다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "wisdom": -10,
+        "gold": 2
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_4_4",
+      "text": "내가 고른 기억이 도깨비의 손에 스며들자, 머릿속이 텅 빈 듯 흔들린다.  \n잠시 공허가 스치고 지나가자, 도깨비가 흐뭇한 듯 고개를 끄덕였다.\n\n그는 품속에서 묵직한 주머니를 꺼내 건넸다.  \n짤랑— 은은하게 울리는 소리, 낡은 **엽전 다발**이 손에 쥐어진다.\n\n“기억은 그만큼 값진 것이지요. 이 정도면 공정한 거래라 생각합니다.”\n\n그가 미소 짓는 순간, 시장의 등불이 하나둘 꺼져갔다.  \n상인도, 좌판도, 웃음소리도 안개 속으로 녹아 사라진다.\n\n뒤돌아보니, 남은 건 풀벌레 소리뿐인 텅 빈 공터였다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "charisma": -10,
+        "gold": 2
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_5_1",
+      "text": "안개 속에서 장대한 환영이 스며들어왔다.  \n거친 숨결, 손에 쥔 장병기의 묵직한 감각, 땀으로 젖은 어깨의 무게까지—  \n순간, 낯선 사내의 삶이 내 몸을 통과하는 듯 파고든다.\n\n눈을 깜박이자 환영은 사라졌지만, 손끝에는 아직도 강철의 진동이 남아 있었다.  \n도깨비가 미소 지었다.  \n“이제 그 기억은 나그네의 일부가 되었지요. 곧 익숙해질 겁니다.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "시장을 떠난다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_leave_2"
+          }
+        }
+      ],
+      "effects": {
+        "strength": 10,
+        "gold": -2
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_5_2",
+      "text": "안개가 흘러들며, 젊은 여인의 숨결이 온몸을 채운다.  \n숨이 차오르지만 가슴은 벅차오르고, 두 다리는 거침없이 돌계단을 내달린다.  \n발바닥에 전해지는 돌의 거친 감촉, 바람이 귓가를 스치는 상쾌함—  \n그 속에서 온몸이 가볍게 솟구쳐 오르는 듯하다.\n\n눈을 뜨니 이미 계단도, 여인의 모습도 사라졌다.  \n그러나 다리에 남은 탄력은 여전히 나의 것이었다.\n\n도깨비가 고개를 끄덕였다.  \n“이제 그 속도와 활기는 나그네의 일부가 되었지요.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "시장을 떠난다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_leave_2"
+          }
+        }
+      ],
+      "effects": {
+        "gold": -2,
+        "agility": 10
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_5_3",
+      "text": "안개가 부드럽게 번지며, 낡은 등잔불 아래의 풍경이 스며든다.  \n구부정한 노인의 손이 책장을 천천히 넘긴다.  \n한 글자, 한 문장을 따라가며 머릿속에 고요한 물결이 일어난다.\n\n서걱— 종이의 질감, 잉크의 냄새, 페이지를 채운 지혜의 무게가 가슴 깊숙이 내려앉는다.  \n눈을 감았다 뜨자, 낯선 사내의 모습은 사라졌지만, 그 평온한 집중은 여전히 남아 있었다.\n\n도깨비가 미소 지었다.  \n“이제 그 사유와 사색은 나그네의 것이 되었지요.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "시장을 떠난다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_leave_2"
+          }
+        }
+      ],
+      "effects": {
+        "wisdom": 10,
+        "gold": -2
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_5_4",
+      "text": "안개 속에서 장터의 소음이 밀려왔다.  \n사람들 사이로 분주히 오가는 상인의 목소리,  \n“한 닢 깎아드리지요!”  \n“이건 보통 물건이 아닙니다!”\n\n손끝에는 엽전을 굴리는 익숙한 감각이, 입가에는 자연스레 미소가 번진다.  \n가격을 올리고 내리는 호흡, 사람들의 마음을 읽는 눈빛—  \n순간, 그 모든 것이 내 것이 된 듯 스며든다.\n\n환영이 흩어지고 나자, 남은 건 입술 끝에 맴도는 자신감이었다.\n\n도깨비가 흐뭇하게 웃었다.  \n“흥정의 재주는 어디서든 빛을 발하지요. 이제 그 기억은 나그네의 것입니다.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "시장을 떠난다",
+          "next": {
+            "scene_id": "scn_event_dokkebi_leave_2"
+          }
+        }
+      ],
+      "effects": {
+        "charisma": 10,
+        "gold": -2
+      }
+    },
+    {
+      "id": "scn_event_dokkebi_leave_2",
+      "text": "발걸음을 돌려 시장을 빠져나왔다.  \n등불의 빛은 순식간에 꺼지고, 좌판도, 상인들도, 흥정의 소리도 하나씩 자취를 감춘다.  \n뒤돌아본 길에는 그저 풀벌레 소리만 깃든 빈 공터가 있을 뿐이었다.\n\n그러나 머릿속에는 낯선 기억의 울림이 스며들어 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_snake_1",
+      "text": "풀숲을 스치며 걷던 중,  \n어디선가 부스럭거리는 소리가 들렸다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "자세히 살펴본다",
+          "next": {
+            "scene_id": "scn_event_snake_1"
+          },
+          "condition": {
+            "skills": {
+              "intuition": {
+                "min": 1
+              }
+            }
+          }
+        },
+        {
+          "text": "앞으로 나아간다",
+          "probability": {
+            "base_rate": 0.4,
+            "success_next": {
+              "scene_id": "scn_event_snake_3"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_snake_4"
+            },
+            "modifier": {
+              "skills": {
+                "observation": {
+                  "per_unit": 0.3
+                }
+              }
+            }
+          }
+        }
+      ],
+      "random_selectable": true,
+      "repeatable": false
+    },
+    {
+      "id": "scn_event_snake_2",
+      "text": "시선을 낮추자, 풀잎 사이로 가느다란 형체가 드러났다.\n\n[[snake]]\n\n흙바닥 위, 길게 뻗은 독사가 조용히 몸을 틀고 있었다.\n혀끝이 짧게 튀며, 풀숲을 가볍게 두드렸다.\n\n한 발짝만 더 내디뎠다면 그 위를 밟을 뻔했다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "조심히 지나간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "intuition": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_snake_3",
+      "text": "풀숲이 발목을 스치며 길이 이어졌다.\n잠시 부스럭거림이 스쳤지만, 금세 고요가 돌아왔다.\n\n흙바닥에 길게 뻗은 그림자가 있었으나,\n발끝은 아슬하게 그 옆을 비껴갔다.\n\n작은 쉭 소리가 풀 속에 흩어졌고,\n이내 모든 기척이 숲 어둠에 묻혔다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "observation": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_snake_4",
+      "text": "풀숲을 스치며 걷던 발끝 아래,\n갑작스레 날카로운 고통이 파고들었다.\n\n낮게 울리는 쉭쉭거림과 함께,\n가느다란 독사의 형체가 풀잎 사이에서 튀어 올랐다.\n\n[[snake]]\n\n이빨이 살을 파고든 자리에서,\n순식간에 뜨거운 열이 퍼져나갔다.\n\n풀잎이 흩어지고,\n독사는 다시 어둠 속으로 몸을 감췄다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "observation": 1
+          }
+        },
+        "health": -1,
+        "add_buffs": ["poisoned"]
+      }
+    },
+    {
+      "id": "scn_event_peddler_1",
+      "text": "길가에 수레가 세워져 있다.\n남루한 옷차림의 행상인이 바구니를 열어 보이며 손짓한다.\n안에는 말린 약초와 떡, 그리고 짧은 검 몇 자루가 가지런히 놓여 있다.\n\n“길손이시구려. 여정에 필요한 건 없소?”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "검을 산다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_peddler_3"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "떡을 산다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_peddler_2"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "약초를 산다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_peddler_4"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "그냥 지나간다",
+          "next": {
+            "scene_id": "scn_event_peddler_leave_1"
+          }
+        }
+      ],
+      "random_selectable": true,
+      "repeatable": true
+    },
+    {
+      "id": "scn_event_peddler_2",
+      "text": "엽전을 건네자, 행상인이 바구니에서 떡을 꺼내 건넸다.\n쫄깃한 향이 퍼지며, 손끝에 묵직한 온기가 전해졌다.\n\n“먼 길엔 든든한 먹거리가 제일이지요.”\n그는 가볍게 웃으며 다시 바구니를 정리했다.\n\n옆에는 아직 다른 물건들이 가지런히 놓여 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "다른 물건을 본다",
+          "next": {
+            "scene_id": "scn_event_peddler_6"
+          },
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "더 살 물건은 없다",
+          "next": {
+            "scene_id": "scn_event_peddler_5"
+          }
+        }
+      ],
+      "effects": {
+        "items": {
+          "rice_cake": 1
+        },
+        "gold": -1
+      }
+    },
+    {
+      "id": "scn_event_peddler_3",
+      "text": "엽전을 건네자, 행상인이 수레 아래에서 짧은 검을 꺼냈다.\n낡은 칼집에 흙먼지가 묻어 있었지만, 날은 매끄럽게 빛났다.\n\n“허허, 여정에 든든한 동무가 될 겁니다.”\n그는 검을 내밀며 웃었다.\n\n수레 위의 바구니에는 여전히 다른 물건들이 놓여 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "다른 물건을 본다",
+          "next": {
+            "scene_id": "scn_event_peddler_6"
+          },
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "더 살 물건은 없다",
+          "next": {
+            "scene_id": "scn_event_peddler_5"
+          }
+        }
+      ],
+      "effects": {
+        "gold": -1,
+        "items": {
+          "sword": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_peddler_4",
+      "text": "전을 건네자, 행상인이 향기 짙은 약초 꾸러미를 내밀었다.\n풀잎이 스치는 청량한 향이 코끝을 감쌌다.\n\n“지친 몸엔 이만한 게 없지요. 달여 드시면 훨씬 나아질 겁니다.”\n그는 꾸러미를 건네며 바구니를 다시 정돈했다.\n\n바구니 속에는 여전히 다른 물건들이 가지런히 놓여 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "다른 물건을 본다",
+          "next": {
+            "scene_id": "scn_event_peddler_6"
+          },
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "더 살 물건은 없다",
+          "next": {
+            "scene_id": "scn_event_peddler_5"
+          }
+        }
+      ],
+      "condition": {
+        "gold": {
+          "min": 1
+        }
+      },
+      "effects": {
+        "gold": -1,
+        "items": {
+          "herb": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_peddler_5",
+      "text": "그는 수레를 정리하며 손을 흔든다.\n“다음에 또 들르시면, 더 좋은 것도 보여드리지요.”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "나아간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_peddler_6",
+      "text": "행상인이 바구니를 다시 열어 보였다.\n작은 웃음을 띤 채 손짓한다.\n\n“어디, 다른 것도 보시겠소?”\n\n바구니 안에는 떡과 약초, 짧은 검이 나란히 놓여 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "검을 산다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_peddler_3"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "떡을 산다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_peddler_2"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "약초를 산다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_event_peddler_4"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "더 살 물건은 없다",
+          "next": {
+            "scene_id": "scn_event_peddler_5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_peddler_leave_1",
+      "text": "행상인의 바구니를 훑어봤지만 필요한 물건은 보이지 않았다.\n마땅히 살 물건은 없어 발걸음을 떼자, 행상인이 가볍게 웃으며 말한다.\n\n“다음에 또 들러주시오.”\n\n그 목소리가 뒤로 멀어지며, 당신은 걸음을 옮겼다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "나아간다"
+        }
+      ],
+      "conditional_text": [
+        {
+          "text": "바구니 속 물건들이 눈에 들어오지만, 주머니가 텅 비어 있다.\n행상인은 묻지도 않고, 조용히 바구니를 덮었다.\n\n당신은 아쉬움을 뒤로하고, 다시 걸음을 옮긴다.",
+          "condition": {
+            "gold": 0
+          }
+        }
+      ],
+      "condition": {
+        "gold": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_wolf_1",
+      "text": "산길을 따라 걷던 중, 숲속 어둠 속에서 낮은 울음소리가 새어 나왔다.\n밤공기 속에 섞여 나온 소리는, 짐승의 신음처럼 들렸다.\n\n발을 멈추자, 짙은 어둠 속에서 무엇인가 몸부림치는 기척이 느껴졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "소리 쪽으로 다가간다",
+          "next": {
+            "scene_id": "scn_event_wolf_2"
+          }
+        },
+        {
+          "text": "그냥 지나간다"
+        }
+      ],
+      "random_selectable": true
+    },
+    {
+      "id": "scn_event_wolf_2",
+      "text": "풀숲을 헤치자, 희미한 달빛에 비친 그림자가 드러났다.\n커다란 짐승이 바위에 깔린 채, 힘겹게 몸을 떨고 있었다.\n\n[[wolf_rock]]\n\n늑대였다.\n짧은 숨을 몰아쉬며, 축축한 털이 들썩였다.\n황금빛 눈동자가 번뜩였다가 곧 흐려졌다.\n\n멀리서 들리던 신음은 바로 이 짐승의 것이었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "사냥한다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_event_wolf_3"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_wolf_4"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "martial_arts": {
+                  "per_unit": 0.09
+                }
+              },
+              "items": {
+                "sword": {
+                  "per_unit": 0.09,
+                  "max": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "돌아간다",
+          "next": {
+            "scene_id": "scn_event_wolf_leave_1"
+          }
+        },
+        {
+          "text": "바위를 치운다",
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_event_wolf_5"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_wolf_6"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.04
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_wolf_3",
+      "text": "주변의 돌멩이를 움켜쥐고 늑대에게 다가섰다.\n몸을 웅크린 채 숨을 몰아쉬던 늑대가, 미세하게 고개를 들었다.\n\n한걸음 더 다가선 순간—\n들어올린 돌에 온 힘을 실어 내리찍었다.\n둔탁한 충격음과 함께, 늑대의 몸이 크게 흔들렸다.\n\n잠시 뒤, 숨소리도 멈췄다.\n풀숲에 피냄새가 번지며, 밤공기가 묵직하게 가라앉았다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "나아간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "strength": 1,
+          "skills": {
+            "martial_arts": 1
+          }
+        },
+        "items": {
+          "raw_meat": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_wolf_4",
+      "text": "주변의 돌멩이를 움켜쥐고 늑대에게 다가섰다.\n몸을 움츠린 채 숨을 몰아쉬던 늑대가, 고개를 번쩍 들었다.\n\n그 순간—\n돌을 휘두르려던 팔에 힘이 모자랐다.\n균형이 어긋나며 발끝이 바위에 걸렸다.\n\n몸이 앞으로 쏠린 찰나,\n늑대가 날카로운 이빨을 드러내며 턱하니 물었다.\n\n짧은 비명과 함께, 팔뚝에 뜨거운 통증이 퍼졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "다시 시도한다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_event_wolf_7"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_wolf_8"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "martial_arts": {
+                  "per_unit": 0.09
+                }
+              },
+              "items": {
+                "sword": {
+                  "per_unit": 0.09,
+                  "max": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "도망친다",
+          "next": {
+            "scene_id": "scn_event_wolf_leave_2"
+          }
+        }
+      ],
+      "effects": {
+        "health": -1,
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_wolf_leave_1",
+      "text": "풀잎이 스치는 소리에 늑대가 고개를 들었다.\n황금빛 눈동자가 어둠 속에서 반짝였지만, 곧 힘없이 가라앉았다.\n\n당신은 잠시 그 자리에 멈춰 섰다.\n움직이지 못한 채 웅크린 짐승을 한동안 바라보다—\n이내 조용히 발길을 돌렸다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_wolf_5",
+      "text": "바위 옆에 몸을 붙이고, 두 손을 밀어 넣었다.\n축축한 흙과 돌 틈 사이로 힘을 실었지만—\n\n묵직한 바위는 조금도 움직이지 않았다.\n팔에 힘이 빠지며, 숨소리만 점점 거칠어졌다.\n\n늑대는 여전히 깔린 채, 낮은 신음을 흘리고 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "돌아간다",
+          "next": {
+            "scene_id": "scn_event_wolf_leave_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "affinity": 1
+          }
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_event_wolf_6",
+      "text": "바위 옆으로 몸을 낮추고, 두 손을 밀어 넣었다.\n묵직한 돌 틈 사이로 먼지가 흩날렸다.\n\n힘을 주자, 바위가 서서히 흔들리기 시작했다.\n늑대는 낮게 신음을 흘리며 몸을 움찔였다.\n\n마침내, 바위가 한쪽으로 굴러 떨어졌다.\n풀밭에 드러난 늑대는 힘없이 숨을 몰아쉰 채, 움직이지 않았다.\n\n털은 흙에 젖었고, 눈동자는 흐릿했다.\n그저 숨만 쉬며, 조용히 고개를 숙이고 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "먹을 것을 준다",
+          "next": {
+            "scene_id": "scn_event_wolf_9"
+          },
+          "condition": {
+            "items": {
+              "raw_meat": {
+                "min": 1
+              }
+            }
+          }
+        },
+        {
+          "text": "두고간다",
+          "next": {
+            "scene_id": "scn_event_wolf_leave_3"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "affinity": 1
+          },
+          "strength": 1
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_event_wolf_7",
+      "text": "팔에서 피가 흘렀지만, 돌을 놓치지 않았다.\n늑대는 입가에 핏방울을 묻힌 채, 낮게 으르렁거렸다.\n\n숨을 고르며 다시 다가섰다.\n이번엔 주저하지 않고, 그대로 돌을 내리쳤다.\n\n묵직한 충격과 함께, 늑대의 몸이 떨리며 늘어졌다.\n피가 흙바닥을 적시자, 긴장이 서서히 풀렸다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          },
+          "strength": 1
+        },
+        "items": {
+          "raw_meat": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_wolf_8",
+      "text": "떨리는 손끝으로 다시 돌을 움켜쥐었다.\n늑대는 낮게 으르렁거리며 몸을 일으키려 했다.\n\n기회를 놓치지 않으려 다가섰지만—\n넘어진 발밑에서 바위 조각이 굴러 나왔다.\n그 소리에 늑대의 눈이 번뜩였다.\n\n순식간에 뒷발이 튀어 오르며, 발톱이 가슴팍을 긁었다.\n숨이 턱 막히는 고통이 몰려오고, 몸이 뒤로 나동그라졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "도망친다",
+          "next": {
+            "scene_id": "scn_event_wolf_leave_2"
+          }
+        }
+      ],
+      "effects": {
+        "health": -1,
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_wolf_leave_2",
+      "text": "늑대가 다시 몸을 들썩이자, 그대로 뒷걸음질쳤다.\n피 묻은 팔을 감싼 채, 풀숲 사이로 몸을 돌렸다.\n\n바위 뒤편에서 울컥, 짧은 으르렁임이 터졌다.\n그러나 늑대는 따라오지 않았다.\n\n짙은 어둠 속에서 간신히 균형을 잡으며, 산길을 빠져나왔다.\n피비린내가 아직 코끝에 맴돌았다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_wolf_9",
+      "text": "조심스럽게 고깃덩이를 꺼내 풀 위에 내려놓았다.\n늑대의 코끝이 움찔이며, 미약하게 움직였다.\n\n곧 눈동자가 깜빡이며, 천천히 고개를 들었다.\n그림자처럼 다가온 냄새 앞에, 늑대는 힘겹게 턱을 움직였다.\n\n그리고—\n갈라진 숨 사이로, 고기를 허겁지겁 물어뜯기 시작했다.\n먹는 내내 눈을 떼지 못하더니,\n잠시 후, 고개를 들어 이쪽을 바라보았다.\n\n짧은 정적 후,\n늑대는 조용히 몸을 돌려, 숲속 어둠으로 사라졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "affinity": 1
+          }
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_event_wolf_leave_3",
+      "text": "늑대는 풀 위에 몸을 웅크린 채, 미동도 하지 않았다.\n흙먼지가 묻은 털 사이로, 가늘고 거친 숨소리만 이어졌다.\n\n당신은 잠시 그 자리에 서 있었다.\n그러다 조용히 몸을 돌렸다.\n\n풀숲을 헤치고 산길로 나아가는 사이,\n늑대는 고개를 들지 않았다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_main_1_intro",
+      "text": "<안개의 조선>\n\n시끄러운 소리에 눈이 번쩍 뜨였다.\n곰팡이 냄새가 스민 천장, 삭은 장판이 먼저 시야에 들어온다.\n주변엔 부서진 가구가 나뒹굴고, 벽 틈새로 안개가 스며든다.\n\n밖에서는 사람들의 목소리가 들려왔다.\n\n“왜 아무도 찾지 않습니까! 이번에도 사라졌는데!”\n“그만해라. 괜히 입에 올려봤자 달라질 게 없다.”\n\n군중이 술렁이며 웅성거린다.\n몸을 일으키자, 소리가 더 또렷해진다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "밖으로 나간다",
+          "next": {
+            "scene_id": "scn_main_1_1"
+          }
+        }
+      ],
+      "effects": {
+        "add_buffs": ["fog_strong"]
+      }
+    },
+    {
+      "id": "scn_main_1_1",
+      "text": "문을 열자, 차가운 기운이 얼굴을 스쳤다.\n바깥은 온통 희뿌연 안개로 잠겨 있었다.\n\n골목 양옆에는 기와집과 초가집이 늘어서 있고,\n마을 한가운데는 사람들이 둥글게 모여 있었다.\n남자들은 갓을 눌러쓰고 도포 자락을 움켜쥔 채 서 있었고,\n아낙네들은 장옷으로 얼굴을 가린 채 눈빛만 주고받는다.\n\n그 중심에 젊은 사내 하나가 목소리를 높였다.\n“—그러니 누군가는 나서야 합니다! 안개는 한양에서 흘러온다 했습니다.\n그곳으로 가야 답을 찾을 수 있습니다!”\n\n중년 남자가 얼굴을 찡그리며 맞받았다.\n“허나 그곳에 간 자가 살아 돌아온 적이 있더냐.”\n\n사내는 주먹을 움켜쥐며 대꾸했다.\n“머무는 것만으로는 아무것도 달라지지 않습니다. 제가 직접 가겠습니다!”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "다가간다",
+          "next": {
+            "scene_id": "scn_main_1_2"
+          }
+        },
+        {
+          "text": "조용히 떠난다",
+          "next": {
+            "scene_id": "scn_main_1_leave"
+          },
+          "condition": {
+            "death_count": {
+              "min": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_1_2",
+      "text": "발걸음을 옮기자, 웅성거리던 소리가 뚝 끊겼다.\n주민들의 시선이 한꺼번에 내게 쏠린다.\n\n“또 나타났어…”\n“아무래도, 그늘진 날이니…”\n\n두려움이 묻은 눈빛들이 따라붙는다.\n\n젊은 사내가 당신을 스치듯 바라본다.\n잠시 눈빛이 흔들리더니, 곧 결연하게 굳어졌다.\n종이 뭉치를 움켜쥔 그의 손이 힘을 더한다.\n\n“…가보겠습니다.”\n\n그는 고개를 꾸벅이고는 마을 어귀 쪽으로 발걸음을 옮겼다.\n안개 속으로 뒷모습이 천천히 사라진다.\n\n남아 있던 중년 남자가 당신을 뚫어지게 바라본다.\n잠시 침묵하다가 낮게 묻는다.\n\n“자네는… 누구지?”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "이름을 말한다",
+          "next": {
+            "scene_id": "scn_main_1_3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_1_leave",
+      "text": "당신은 군중의 소란을 뒤로하고, 발걸음을 돌렸다.\n\n안개 낀 골목을 지나 마을 어귀로 향한다.\n차가운 바람이 옷자락을 스치고, 발밑 장판처럼 길이 펼쳐진다.\n\n이유는 분명하지 않았다.\n그저 어딘가, 안개가 흘러온 자리로 가야 한다는 예감이 있었다.\n한양—그 이름이 가볍게 떠올랐다.\n\n당신은 숨을 고르고, 희뿌연 안개 속으로 몸을 맡겼다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "나아간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_main_1_3",
+      "text": "이름을 들은 중년 남자가 고개를 천천히 끄덕였다.\n“…그래, 자네는 이름은 남아 있구먼.”\n“여긴 우천(雨川) 마을이라네. 자네 같은 이를 본 게 이번이 처음은 아니야.”\n\n그의 눈빛이 흔들리며, 낮게 말을 이었다.\n“그늘진 날이면 꼭 누군가 사라지고… 또 다른 이가 이렇게 나타나곤 하지.”\n\n곁에 있던 노파가 손사래를 치며 중얼거렸다.\n“안개 얘긴 괜히 입에 올리지도 말게. 오늘 같은 날은 더더욱…”\n\n중년 남자가 다시 나를 바라본다.\n“지침이 있네. 이런 이는 관아로 보내라 했지.\n거기서라면 자네도 무언가 답을 찾을 수 있을지 모르네.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "관아로 가겠다",
+          "next": {
+            "scene_id": "scn_main_1_leave_2"
+          }
+        },
+        {
+          "text": "무시한다",
+          "next": {
+            "scene_id": "scn_main_1_leave_3"
+          }
+        },
+        {
+          "text": "안개에 대해 묻는다",
+          "next": {
+            "scene_id": "scn_main_1_question_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_1_leave_2",
+      "text": "중년 남자가 한동안 당신을 바라보다가, 천천히 고개를 끄덕였다.\n\n“길을 따라 서쪽으로 나가면 된다네.\n그곳에서 자네를 맞아줄 것이고… 적어도 이 마을에 머무는 것보다는 나을 게야.”\n\n곁에 있던 노파가 주름진 손을 비비며 덧붙였다.\n“안개가 낀 날엔 오래 머물수록 탈이 난다지. 어서 떠나는 게 좋아.”\n\n주민들의 시선엔 여전히 경계가 담겨 있었지만, 그 속에는 묘한 안도감도 섞여 있었다.\n마치 ‘정해진 길’로 당신을 떠나보내며 스스로도 숨을 고르는 듯했다.\n\n당신은 고개를 끄덕이고 발걸음을 옮겼다.\n안개 낀 길이 천천히 펼쳐지며, 새로운 여정이 시작된다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "나아간다"
+        }
+      ],
+      "effects": {
+        "remove_buffs": ["fog_strong"]
+      }
+    },
+    {
+      "id": "scn_main_1_leave_3",
+      "text": "당신은 대답하지 않았다.\n중년 남자의 시선을 피하자, 주변의 웅성거림이 더해진다.\n\n“저 자도 결국…”\n“쉿, 입에 올리지도 마.”\n\n뒷말은 이내 삼켜지고, 사람들은 고개를 돌린다.\n아무도 더 다가오려 하지 않았다.\n\n안개 낀 길가에 홀로 서 있는 듯한 기분.\n멀어지는 시선 속에서, 당신은 조용히 발걸음을 옮긴다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "나아간다"
+        }
+      ],
+      "effects": {
+        "remove_buffs": ["fog_strong"]
+      }
+    },
+    {
+      "id": "scn_main_1_question_1",
+      "text": "당신의 물음에 중년 남자가 잠시 입술을 달싹였다.\n주변 사람들까지 서로 눈치를 보며 침묵을 지킨다.\n\n“…안개가 끼면, 평소라면 일어날 수 없는 일들이 벌어진다네.”\n“사람이 흔적도 없이 사라지기도 하고… 죽은 이가 돌아다니기도 하지.\"\n\n말끝이 갈라지듯 떨렸고, 곁에 모인 이들마저 얼굴을 굳혔다.\n\n잠시 후, 그는 마을 바깥을 향해 시선을 던진다.\n\n“대부분은 한양 쪽에서 흘러온다지.\n여기까지 덮치는 건 드물지만… 오늘처럼 그늘진 날에는 예외가 없다네.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "그늘진 날에 대해 묻는다",
+          "next": {
+            "scene_id": "scn_main_1_question_2"
+          }
+        },
+        {
+          "text": "더이상 묻지 않는다",
+          "next": {
+            "scene_id": "scn_main_1_leave_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_1_question_2",
+      "text": "당신의 물음에 중년 남자의 얼굴이 굳었다.\n주변에 있던 이들까지 숨을 죽이며 서로 눈치를 본다.\n\n“그늘진 날이란… 나라 전체가 안개에 뒤덮이는 때를 말한다네.”\n그의 목소리는 한 톤 낮아졌다.\n\n“평소라면 닿지 않을 곳까지 짙은 안개가 퍼져,\n마을 하나 예외 없이 삼켜 버리지.”\n\n옆에 있던 노파가 떨리는 손을 모으며 중얼거렸다.\n“그날엔 다들 문을 걸어 잠그고, 숨만 죽인다네.\n괜히 입에 올렸다간 화가 미칠까 두려워서 말이지…”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "더이상 묻지 않는다",
+          "next": {
+            "scene_id": "scn_main_1_leave_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_fake_tiger_1",
+      "text": "한낮의 햇살이 내리쬐는 고개 마루.\n풀숲이 요란하게 흔들리더니,\n호랑이 한 마리가 길을 막아섰다.\n\n[[tiger_day]]\n\n줄무늬 가죽이 햇빛에 번들거렸다.\n그때, 어딘가 서툰 말투가 울려 나왔다.\n\n“떡 하나 주면 안 잡아먹지!”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "떡을 준다",
+          "next": {
+            "scene_id": "scn_event_fake_tiger_2"
+          },
+          "condition": {
+            "items": {
+              "rice_cake": {
+                "min": 1
+              }
+            }
+          }
+        },
+        {
+          "text": "싸운다",
+          "probability": {
+            "base_rate": 1,
+            "success_next": {
+              "scene_id": "scn_event_fake_tiger_3"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_fake_tiger_3-1"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 1
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "도망친다",
+          "probability": {
+            "base_rate": 1,
+            "success_next": {
+              "scene_id": "scn_event_fake_tiger_leave_1"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_fake_tiger_leave_1_1"
+            },
+            "modifier": {
+              "stats": {
+                "agility": {
+                  "per_unit": 1
+                }
+              }
+            }
+          }
+        }
+      ],
+      "random_selectable": true
+    },
+    {
+      "id": "scn_event_fake_tiger_2",
+      "text": "당신이 바구니에서 떡을 꺼내 내밀자,\n호랑이는 두 손… 아니, 앞발처럼 내민 팔로 덥석 받아들었다.\n\n순간, 어색한 웃음소리가 터졌다.\n\n“고마워!!”\n\n호랑이는 떡을 꼭 쥔 채, 쿵쿵 발소리를 내며\n풀숲 속으로 달아나듯 사라졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "items": {
+          "rice_cake": -1
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_event_fake_tiger_3",
+      "text": "당신이 자세를 고치자, 호랑이가 움찔하며 뒤로 물러났다.\n거친 숨을 몰아쉬다 그만 발이 꼬여, 풀밭에 나동그라졌다.\n\n쾅 소리와 함께 가죽이 벗겨지며, 작은 얼굴이 드러났다.\n호랑이인 줄 알았던 것은, 어린아이가 뒤집어쓴 가죽이었다.\n\n아이의 눈에 눈물이 고였다.\n“으… 으앙! 미안해요!”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "왜 이런 짓을 한 거냐",
+          "next": {
+            "scene_id": "scn_event_fake_tiger_4"
+          }
+        },
+        {
+          "text": "아이를 꾸짖는다",
+          "next": {
+            "scene_id": "scn_event_fake_tiger_5"
+          }
+        },
+        {
+          "text": "그냥 떠난다",
+          "next": {
+            "scene_id": "scn_event_fake_tiger_leave_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_fake_tiger_leave_1",
+      "text": "몸을 돌려 그대로 달아나자,\n뒤에서 허둥지둥 목소리가 따라왔다.\n\n“어… 어디가!”\n\n호랑이 가죽이 풀숲에 걸리며 바스락거렸다.\n그러나 곧, 소리는 멀어지고 산길엔 바람만이 남았다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "계속 나아간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_fake_tiger_4",
+      "text": "겁먹은 아이가 눈물을 훔치며 더듬거렸다.\n\n“집에… 동생들이 있어요. 며칠째 굶어서…”\n“먹을 걸 구하려고… 호랑이 흉내를 내면, 사람들이 떡이라도 줄 거 같아서…”\n\n작은 손이 가죽을 꼭 움켜쥔 채 떨렸다.\n아이의 얼굴은 창백했고, 목소리는 점점 작아졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "떡을 준다",
+          "next": {
+            "scene_id": "scn_event_fake_tiger_6"
+          },
+          "condition": {
+            "items": {
+              "rice_cake": {
+                "min": 1
+              }
+            }
+          }
+        },
+        {
+          "text": "그냥 떠난다",
+          "next": {
+            "scene_id": "scn_event_fake_tiger_leave_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_fake_tiger_5",
+      "text": "아이의 팔을 붙잡자, 놀란 눈이 동그랗게 커졌다.\n당신은 호랑이 흉내를 내며 사람을 겁주면 안 된다고 꾸짖었다.\n\n작은 어깨가 움찔하며 떨렸다.\n“……죄송해요.”\n\n아이의 눈가에 눈물이 맺혔다.\n가죽이 축 처진 채, 고개가 천천히 숙여졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "떡을 준다",
+          "next": {
+            "scene_id": "scn_event_fake_tiger_6"
+          },
+          "condition": {
+            "items": {
+              "rice_cake": {
+                "min": 1
+              }
+            }
+          }
+        },
+        {
+          "text": "그냥 떠난다",
+          "next": {
+            "scene_id": "scn_event_fake_tiger_leave_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_fake_tiger_leave_2",
+      "text": "당신은 대답 없이 발길을 돌렸다.\n풀밭에 주저앉은 아이가 울음을 터뜨렸다.\n\n“……!”\n\n짙은 호랑이 가죽이 축 늘어진 채,\n작은 어깨가 들썩이며 흔들렸다.\n\n멀어지는 발자국 소리만이 산길에 남았다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "여정을 계속한다"
+        }
+      ]
+    },
+    {
+      "id": "scn_event_fake_tiger_6",
+      "text": "당신이 남은 음식을 내밀자,\n아이의 눈이 크게 반짝였다.\n\n“정말… 고마워요!”\n\n작은 손이 떨리며 떡을 받아 쥐었다.\n굶주림에 지친 얼굴에 미소가 번졌다.\n\n잠시 뒤, 아이는 품에 떡을 안은 채\n허겁지겁 산길 아래로 달려갔다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "items": {
+          "rice_cake": -1
+        },
+        "variables": [
+          {
+            "id": "karma",
+            "operator": "add",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_main_2_intro",
+      "text": "<안개의 조선>\n\n서쪽 길을 따라 나아가던 중, 코끝에 비린내가 스쳤다.\n안개가 걷히자, 강물이 붉게 일렁이며 출렁거린다.\n핏빛 물결이 어둠 속에 흔들리고, 바람이 불 때마다 섬뜩한 냄새가 번진다.\n\n해는 이미 산 너머로 기울어, 길가엔 어둠이 깔리고 있었다.\n강 건너편에 마을 지붕들이 어슴푸레 드러나고,\n길 끝에는 바람에 펄럭이는 주막 깃발이 보였다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "주막으로 다가간다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_1"
+          }
+        },
+        {
+          "text": "밖에서 야영한다",
+          "next": {},
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_camp_1"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_camp_2"
+            },
+            "modifier": {
+              "stats": {
+                "wisdom": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "survival_skills": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        }
+      ],
+      "priority_condition": {
+        "scene_count": {
+          "min": 30
+        }
+      },
+      "condition": {
+        "completed_scenes": {
+          "in": ["scn_main_1_1"]
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_tavern_1",
+      "text": "마을 길을 따라 들어서자, 어둠 속에 작은 불빛이 번졌다.\n흙길 한쪽에 세워진 초가집, 처마 끝에서 주막 깃발이 바람에 흔들린다.\n가까이 다가가자 술 냄새와 사람들 웃음소리가 희미하게 새어 나왔다.\n\n문을 밀고 들어서자, 따뜻한 기운과 함께 구수한 된장 냄새가 퍼진다.\n안쪽에선 장정 몇이 탁자를 두드리며 술잔을 기울이고 있었다.\n주모가 고개를 들어 당신을 살피더니, 낮게 중얼거린다.\n\n“오늘 같은 날에도 오는 이가 있구먼… 자리 있소.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "방을 잡는다 (재화 x 1)",
+          "next": {
+            "scene_id": "scn_main_2_tavern_2"
+          },
+          "visible_if_failed_condition": true,
+          "condition": {
+            "gold": {
+              "min": 1
+            }
+          }
+        },
+        {
+          "text": "공짜로 재워달라",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_tavern_4"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_tavern_5"
+            },
+            "modifier": {
+              "stats": {
+                "charisma": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "speechcraft": {
+                  "per_unit": 0.09
+                },
+                "affinity": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "방을 잡는다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_3"
+          },
+          "condition": {
+            "gold": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_camp_1",
+      "text": "마을 입구를 지나치고, 어둠이 짙은 숲가에 자리를 잡았다.\n습기를 머금은 땅 위에 자리를 펴고, 불씨를 살짝 피우니 멀리 강물의 붉은 기운이 희미하게 비쳤다.\n\n밤은 조용했지만, 간간이 안개가 스치듯 흘렀다.\n눈을 감는 순간, 희망적인 꿈이 스쳐 지나갔다.\n잔잔한 물결, 시원한 냄새, 그리고 환호 소리.\n“—!”\n\n...\n\n다음 날, 새벽 햇살에 눈을 떴다.\n바람 사이로 소란스러운 고성이 들려왔다.\n\n“어젯밤 강을 봤잖나! 무당님이 아니면 누가 막겠어?”\n“그럴수록 강이 더 붉어졌지! 괜히 재앙을 부르는 짓이야!”\n\n핏빛 강가에 모여 선 사람들이 서로 언성을 높이고 있었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "지나친다",
+          "next": {
+            "scene_id": "scn_main_2_leave"
+          }
+        },
+        {
+          "text": "다가간다",
+          "next": {
+            "scene_id": "scn_main_2_blood_river_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "wisdom": 1,
+          "skills": {
+            "survival_skills": 1
+          }
+        },
+        "mind": 1
+      }
+    },
+    {
+      "id": "scn_main_2_camp_2",
+      "text": "마을 입구를 지나 숲가에 자리를 잡았으나, 땅은 축축했고 바람은 매섭게 스며들었다.\n불씨를 일으켜 보려 했으나 젖은 장작은 끝내 타오르지 않았다.\n\n밤은 조용했지만, 간간이 안개가 스치듯 흘렀다.\n눈을 감는 순간, 짧고 불길한 꿈이 스쳐 지나갔다.\n피로 물든 물결, 익사자의 손, 그리고 비명소리.\n“—!!”\n\n...\n\n숨을 몰아쉬며 깨어났을 때, 새벽 빛이 희미하게 숲 사이로 스며들고 있었다.\n피곤은 풀리지 않았고, 가슴은 여전히 빠르게 뛰고 있었다.\n\n바람 사이로 소란스러운 고성이 들려왔다.\n\n“어젯밤 강을 봤잖나! 무당님이 아니면 누가 막겠어?”\n“그럴수록 강이 더 붉어졌지! 괜히 재앙을 부르는 짓이야!”\n\n핏빛 강가에 모여 선 사람들이 서로 언성을 높이고 있었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "지나친다",
+          "next": {
+            "scene_id": "scn_main_2_leave"
+          }
+        },
+        {
+          "text": "다가간다",
+          "next": {
+            "scene_id": "scn_main_2_blood_river_1"
+          }
+        }
+      ],
+      "effects": {
+        "mind": -1,
+        "exp": {
+          "skills": {
+            "survival_skills": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_tavern_2",
+      "text": "주모가 건넨 엽전을 세어 보더니, 고개를 끄덕였다.\n“이만하면 충분하오. 오늘 같은 날은 길손도 손님이지.”\n\n곧 따뜻한 밥상이 차려졌다.\n김이 피어오르는 된장국, 갓 지은 밥, 간소한 나물이었지만,\n오랜 길 끝에선 더없이 든든했다.\n\n식사를 마치자 주모가 방을 안내했다.\n“편히 쉬시오.”\n\n방 안은 허름했으나 아늑했다.\n등잔불이 은은히 흔들리고, 따뜻한 밥기운이 아직 몸에 남아 있었다.\n밖에서는 술객들의 이야기가 아련히 스며든다.\n\n“…핏빛 강은 이번에도 진정되지 않았다지.”\n“…무당이 굿을 벌이고 있다는데, 점점 더 심해지는 건 어찌 된 일일까.”\n\n불길한 소문이 귓가를 스쳤다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "더 엿듣는다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_6"
+          }
+        },
+        {
+          "text": "잠을 청한다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_7"
+          }
+        }
+      ],
+      "effects": {
+        "health": 1,
+        "gold": -1
+      }
+    },
+    {
+      "id": "scn_main_2_tavern_3",
+      "text": "주모가 눈길을 위아래로 훑더니, 한숨을 내쉰다.\n“허허, 날이 날이라 밖에 내쫓을 순 없지. 밥은 못 내주지만, 빈방 하나는 있소.”\n\n뒤편 방문이 삐걱 열리며, 허름한 방이 드러난다.\n곰팡이 냄새가 배어 있고, 종이로 덧댄 벽 사이로 바람이 스며든다.\n몸을 눕히니 차가운 기운이 감돌지만, 지붕 아래라는 것만으로도 안도감이 번졌다.\n\n밖에서는 술객들의 소리가 스며든다.\n“…핏빛 강은 이번에도 진정되지 않았다지.”\n“…무당이 굿을 벌이고 있다는데, 점점 더 심해지는 건 어찌 된 일일까.”\n\n불길한 소문이 귓가를 스쳤다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "더 엿듣는다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_6"
+          }
+        },
+        {
+          "text": "잠을 청한다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_tavern_4",
+      "text": "주모가 팔짱을 끼고 눈을 가늘게 떴다.\n“돈도 없이 방을 달라니… 요즘 세상에 그런 말이 통하겠소?”\n\n주변 술객들이 흥미롭다는 듯 시선을 주었다.\n하지만 당신의 유려한 말과 태도에 잠시 웃음이 번지자, 주모도 마침내 한숨을 내쉰다.\n\n“에휴, 목구멍이 포도청이지. 사람 구실은 해야지 않겠소.\n밥까지 내줄 순 없지만, 빈방 하나는 내드리리다.”\n\n뒤편 방문이 열리며, 좁은 방이 드러났다.\n등잔불이 희미하게 깜빡였고, 찬 기운은 여전했으나 몸을 뉘일 자리는 있었다.\n\n문을 닫고 누우니, 바깥에서 술잔 부딪히는 소리와 함께 흘러나오는 말이 귀에 스쳤다.\n“…핏빛 강은 이번에도 진정되지 않았다지.”\n“…무당이 굿을 벌이고 있다는데, 점점 더 심해지는 건 어찌 된 일일까.”\n\n불길한 소문이 귓가를 스쳤다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "더 엿듣는다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_6"
+          }
+        },
+        {
+          "text": "잠을 청한다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_7"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "affinity": 1,
+            "speechcraft": 1
+          },
+          "charisma": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_tavern_5",
+      "text": "주모가 한쪽 눈썹을 치켜올리더니, 팔짱을 더 굳게 꼈다.\n“돈도 없으면서 방을 달라니… 여기서 그런 억지는 통하지 않소.”\n\n술객들 사이에서 피식거리는 웃음이 터져 나왔다.\n“허, 거지 손님이로군.”\n“오늘 같은 날엔 오히려 더 위험하지 않겠나.”\n\n주모는 고개를 저으며 뒷말을 끊었다.\n“빈방은 있지만, 공짜로 내줄 수는 없지. 미안하오.”\n\n차가운 시선들이 따라붙는 가운데, 더 머물 자리는 없었다.\n밖으로 나오자, 바람에 깃발이 흔들리며 어둠 속 안개가 다시 스며든다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "밖에서 야영한다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_camp_1"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_camp_2"
+            },
+            "modifier": {
+              "stats": {
+                "wisdom": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "survival_skills": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "affinity": 1,
+            "speechcraft": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_tavern_6",
+      "text": "몸을 일으켜 귀를 기울이자, 주막 마루 쪽 술자리가 더 뚜렷하게 들려왔다.\n\n“예전엔 안개가 끼면 그저 강이 핏빛으로 흐를 뿐이었지.\n헌데 이젠 그 혈향에 기묘한 소리까지… 그냥 징조로 보기엔 수상해.”\n\n다른 이가 술잔을 탁 내려놓으며 맞받았다.\n“다 무당 때문이야. 굿을 한다며 강가에서 북을 두드린 그날부터 강이 더 붉어졌잖나.”\n\n“허면 무당이 막으려는 게 아니라, 불러내고 있는 게 아닌가…?”\n“쉿, 입조심하게. 이런 소린 듣는 귀에 따라 화를 부를 수도 있어.”\n\n잠시 침묵이 흘렀다. 술잔 부딪히는 소리만이 잔잔히 이어진다.\n더 들은들 달라질 건 없다는 생각이 스치자, 몸이 한층 무겁게 가라앉는다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "잠을 청한다",
+          "next": {
+            "scene_id": "scn_main_2_tavern_7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_tavern_7",
+      "text": "짧은 밤이 지나고, 옅은 새벽빛이 창호지에 스며들었다.\n몸을 일으키자 된장국 끓는 냄새가 희미하게 감돌았다.\n\n밖으로 나오니, 안개는 조금 걷혔지만 공기는 여전히 축축했다.\n마을 어귀 쪽에서 사람들 목소리가 섞여 흘러왔다.\n\n“어젯밤 강을 봤잖나! 무당님이 아니면 누가 막겠어?”\n“그럴수록 강이 더 붉어졌지! 괜히 재앙을 부르는 짓이야!”\n\n저쪽, 강가로 이어지는 길에서 웅성거림이 점점 커져 온다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "지나친다",
+          "next": {
+            "scene_id": "scn_main_2_leave"
+          }
+        },
+        {
+          "text": "다가간다",
+          "next": {
+            "scene_id": "scn_main_2_blood_river_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_leave",
+      "text": "당신은 괜한 일에 얽히지 않는게 좋을 것 같다는 생각을 하며 핏빛 강가의 소란을 뒤로한 채, 조용히 길을 따라 나아갔다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_blood_river_1",
+      "text": "소리가 나는 쪽으로 발걸음을 옮기자, 붉은 강가에 모여 선 사람들이 눈에 들어왔다.\n누군가는 손짓하며 고함을 지르고, 다른 이들은 이를 갈 듯 맞서고 있었다.\n\n핏빛 강물은 여전히 출렁이고, 비린내는 한층 짙어졌다.\n앞쪽에서는 흰 소복 차림의 무당이 북을 두드리며 굿판을 이어가고 있었다.\n\n그때, 군중 사이에서 낯익은 얼굴이 눈에 들어왔다.\n종이뭉치를 꼭 쥔 채 선 청년—우천 마을에서 떠나는 걸 봤던 바로 그 청년이었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "무슨 일인가",
+          "next": {
+            "scene_id": "scn_main_2_blood_river_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_blood_river_2",
+      "text": "청년은 당신을 보자 잠시 눈빛이 흔들렸으나, 곧 차분히 입을 열었다.\n“강이 저 모양이지요. 무당이 굿을 벌이고 있는데… 오히려 사태가 심해지고 있어요.\"\n“굿을 이어가야 한다는 쪽과, 당장 멈춰야 한다는 쪽이 맞서고 있습니다. 어느 쪽에도 양보가 없어요.”\n\n그의 말이 끝나기도 전에, 다시 고함이 터져 나왔다.\n\n“길손이시지요? 보셨을 겁니다, 저 강을. 무당이 굿을 이어야만 진정될 수 있어요!”\n“무슨 헛소리! 굿을 시작한 뒤로 강은 더 붉어졌어. 그자는 우리를 구한다는 핑계로 화를 불러들이는 거라니까!”\n\n양쪽이 다시 고함을 주고받으며 군중은 흔들렸다.\n눈빛들이 당신에게도 꽂힌다.\n마치 어느 쪽에 서는지 묻는 듯한 기세였다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿을 진행해야 한다",
+          "next": {
+            "scene_id": "scn_main_2_blood_river_3"
+          }
+        },
+        {
+          "text": "굿을 막아야 한다",
+          "next": {
+            "scene_id": "scn_main_2_blood_river_4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_blood_river_3",
+      "text": "찬성파 쪽으로 발걸음을 옮기자, 주민들의 얼굴에 안도감이 번졌다.\n“보시오, 이 길손도 굿이 옳다 하지 않나!”\n누군가 크게 외치자, 웅성거리던 무리 중 몇이 고개를 끄덕였다.\n\n굿판 위 무당은 여전히 북을 두드리며 의식을 이어갔다.\n둔탁한 울림이 강가로 퍼지자, 붉은 물결이 잔잔히 흔들렸다.\n\n찬성파 주민이 당신의 팔을 붙잡았다.\n“반대하는 자들이 방해하지 못하도록 지켜주시오. 오늘 하루는 굿이 이어져야 하오!”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿판 앞을 지킨다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_blood_river_5"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_blood_river_6"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "martial_arts": {
+                  "per_unit": 0.09
+                }
+              },
+              "items": {
+                "sword": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "무당의 의식을 돕는다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_blood_river_7"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_blood_river_8"
+            },
+            "modifier": {
+              "stats": {
+                "wisdom": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "talismanry": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "군중을 설득한다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_blood_river_9"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_blood_river_10"
+            },
+            "modifier": {
+              "stats": {
+                "charisma": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "speechcraft": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_blood_river_4",
+      "text": "반대파 쪽으로 발걸음을 옮기자, 사람들의 눈빛이 번쩍 빛났다.\n“보시오, 이 길손도 굿이 잘못되었다 하지 않나!”\n목소리가 울리자, 흩어져 있던 무리 중 몇이 고개를 끄덕였다.\n\n굿판 위 무당은 여전히 북을 두드리며 의식을 이어갔다.\n둔탁한 울림이 강가로 번지자, 붉은 강물은 더욱 요동치며 거품을 토해냈다.\n\n반대파 주민이 다급히 손을 내밀었다.\n“오늘 안에 이 굿을 멈춰야 하오! 찬성하는 자들이 막아설 것이니, 그들을 뚫어낼 방책을 찾아야 할거요.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "찬성파를 제압한다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_blood_river_11"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_blood_river_12"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.045
+                }
+              },
+              "items": {
+                "sword": {
+                  "per_unit": 0.09
+                }
+              },
+              "skills": {
+                "martial_arts": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "몰래 굿 도구를 망가뜨린다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_blood_river_13"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_blood_river_14"
+            },
+            "modifier": {
+              "stats": {
+                "agility": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "sneak": {}
+              }
+            }
+          }
+        },
+        {
+          "text": "군중을 설득한다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_blood_river_15"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_blood_river_16"
+            },
+            "modifier": {
+              "stats": {
+                "charisma": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "speechcraft": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_blood_river_5",
+      "text": "당신이 굿판 앞으로 나서자, 북소리가 더욱 크게 울려 퍼졌다.\n반대파 주민 몇이 얼굴을 굳히며 달려왔다.\n“길손이 왜 저 자들을 돕는 거냐!”\n\n그들의 손에는 몽둥이와 돌멩이가 들려 있었지만,\n몸을 낮추어 달려드는 이를 밀쳐내자, 거칠게 땅바닥을 굴렀다.\n다른 이들이 소리치며 따라붙었으나, 팔과 어깨로 막아서며 굿판을 지켜냈다.\n\n순식간에 아우성은 흩어지고, 반대파는 뒤로 물러섰다.\n무당의 북소리는 잠시 흔들렸으나 곧 다시 일정한 리듬을 되찾았다.\n붉은 강물 위로 파문이 일듯 울림이 번져갔다.\n\n찬성파 주민들이 외쳤다.\n“보시오, 신도 이 굿을 지지하시는 게야!”\n\n군중은 여전히 술렁였지만, 굿은 끊기지 않고 이어졌다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 이어진다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_success_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "strength": 1,
+          "skills": {
+            "martial_arts": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_6",
+      "text": "굿판 앞을 지켜 서자, 반대파 주민들이 거칠게 몰려들었다.\n“길손이 왜 저 자들을 돕는 거냐!”\n몽둥이와 돌멩이가 한꺼번에 휘둘러졌다.\n\n몸으로 막아내려 했지만, 수가 너무 많았다.\n팔에 충격이 울리고, 어깨가 밀리며 땅바닥에 거칠게 쓰러졌다.\n주변에서 환호와 야유가 뒤섞였다.\n\n무당의 북소리가 순간 끊기며 리듬이 흔들렸다.\n붉은 강물은 더욱 요동치더니, 거품 섞인 파도가 강가에 부딪혔다.\n\n찬성파 주민이 다급히 외쳤다.\n“안 돼! 굿이 깨져 버렸어!”\n\n군중은 혼란에 휩싸였고, 굿판은 무질서 속에서 위태롭게 흔들렸다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 흔들린다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fiasco_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_7",
+      "text": "당신이 굿판에 다가서자, 무당이 잠시 눈빛을 주었다.  \n흐트러진 부적이 눈에 들어왔다. 몇 장은 바람에 젖어 제 구실을 못 하고 있었다.  \n\n낡은 붓을 집어 들고, 빠르게 글자를 덧그렸다.  \n묵향이 스며들며 기운이 정리되자, 무당이 크게 외쳤다.  \n“좋다! 이어가자!”  \n\n북소리가 다시 힘을 얻었고, 불길처럼 요동치던 붉은 강물이 순간 잔잔해졌다.  \n군중은 술렁였지만, 반대파조차 잠시 입을 다물었다.  ",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 이어진다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_success_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "talismanry": 1
+          },
+          "wisdom": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_8",
+      "text": "굿판에 다가서자, 무당이 고개를 끄덕였다.\n당신은 흐트러진 부적을 고쳐 붙이고, 의식의 틈새를 메우려 했다.\n\n그러나 손끝이 떨리며 글씨가 번져버렸다.\n먹물 자국이 얼룩처럼 번지고, 바람에 휘날리며 부적이 찢어졌다.\n\n“뭐 하는 게야!” 무당의 얼굴이 창백해졌다.\n북소리가 흐트러지고, 강물은 더욱 붉게 뒤틀렸다.\n\n군중이 아우성쳤다.\n“역시 저건 화를 불러오는 굿이야!”\n“당장 멈춰라!”\n\n찬성파마저 동요하며 굿판은 위태롭게 흔들렸다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 흔들린다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fiasco_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "talismanry": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_9",
+      "text": "당신이 군중 앞에 나서자, 술렁이던 소리가 잦아들었다.\n차분히 손짓하며 말을 이어가자, 몇몇이 서로 얼굴을 바라봤다.\n\n“…….”\n속삭임이 흘러나오더니, 반대파 중 일부가 팔짱을 풀었다.\n“저 말이 맞는지도 몰라.”\n“굿을 이어가 보는 게 옳을지도…”\n\n찬성파는 기세를 되찾아 고개를 끄덕였고, 무당의 북소리는 다시 힘을 얻었다.\n군중의 시선이 굿판으로 모이며, 붉은 강물 위로 파문이 퍼져갔다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 이어진다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_success_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "speechcraft": 1
+          },
+          "charisma": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_10",
+      "text": "군중 앞에 나섰지만, 말끝이 공허하게 메아리쳤다.\n몇몇은 고개를 저으며 코웃음을 쳤다.\n\n“듣기 좋은 말뿐이야.”\n“외지인이 뭘 안다고 끼어들어!”\n\n반대파의 목소리가 더 커지자, 찬성파도 격앙되어 서로 맞섰다.\n순식간에 고함과 욕설이 터져 나와, 군중은 다시 혼란에 빠졌다.\n\n무당의 북소리가 흔들리며, 붉은 강물은 더욱 짙게 물들었다.\n사람들의 분노가 안개처럼 퍼져나가, 굿판은 위태롭게 흔들렸다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 흔들린다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fiasco_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "speechcraft": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_11",
+      "text": "당신이 굿판 앞으로 나서자, 찬성파 주민들이 길을 막아섰다.\n“길손이 왜 방해를 하는 게야!”\n\n몽둥이와 돌멩이가 위협적으로 들려 있었지만,\n몸을 낮추어 달려드는 이를 밀쳐내자 거칠게 바닥에 나뒹굴었다.\n다른 이들이 몰려들었으나, 팔과 어깨로 밀어붙이며 하나둘 쓰러뜨렸다.\n\n숨 가쁜 고함이 뒤로 물러가자, 굿판은 텅 비었다.\n무당의 손이 멈추며 북소리가 끊겼다.\n붉은 강물은 잠시 요동치더니, 불안한 침묵 속에 가라앉았다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 중단된다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_stop_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          },
+          "strength": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_12",
+      "text": "당신이 굿판 앞으로 나서자, 찬성파 주민들이 거칠게 달려들었다.\n“굿을 망치게 둘 수는 없다!”\n\n몽둥이가 어깨를 강타하며 온몸이 뒤로 밀렸다.\n반격하려 했으나 수가 너무 많았다.\n팔과 다리에 충격이 이어지며 땅바닥에 거칠게 쓰러졌다.\n\n찬성파가 외쳤다.\n“굿을 방해하려는 자다! 끌어내라!”\n\n군중 속에서 거친 손길이 당신을 잡아끌고, 굿판은 다시 이어졌다.\n무당의 북소리가 요란하게 울리며, 붉은 강물은 더욱 요동쳤다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 불안하게 이어진다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fail_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          }
+        },
+        "health": -1
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_13",
+      "text": "군중 틈을 따라 은밀히 굿판으로 다가섰다.\n사람들의 시선은 무당의 북과 춤사위에 쏠려 있었다.\n\n찰나의 틈을 타 북가죽에 손을 뻗었다.\n날카롭게 그어진 칼집이 퍼지듯, 북가죽이 갈라져 찢어졌다.\n\n“꺄악!”\n무당이 손을 뻗었으나 이미 늦었다.\n둔탁하던 울림은 비명을 토하듯 끊겼다.\n\n붉은 강물은 거칠게 요동치다, 마치 끊어진 줄처럼 불길한 침묵에 잠겼다.\n군중은 술렁이며 서로 얼굴을 바라봤다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 중단된다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_stop_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "sneak": 1
+          },
+          "agility": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_14",
+      "text": "군중의 틈을 헤치며 굿판 가까이 다가섰다.\n은밀히 손을 뻗어 북을 건드리려는 순간—\n\n“뭐 하는 거냐!”\n찬성파 주민이 손목을 거칠게 움켜쥐었다.\n\n순식간에 팔이 비틀리며 몸이 드러났다.\n“이 자가 굿을 망치려 한다!”\n고함과 함께 여러 손길이 몰려와, 억지로 뒤로 끌려났다.\n\n무당은 더욱 세차게 북을 두드렸다.\n붉은 강물은 파도치듯 요동치며, 군중의 함성과 뒤섞였다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 불안하게 이어진다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fail_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "sneak": -1
+          }
+        },
+        "health": -1
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_15",
+      "text": "군중 앞에 나서자, 웅성거리던 목소리가 잦아들었다.\n차분한 손짓과 단호한 눈빛이 이어지자, 몇몇이 서로 얼굴을 마주했다.\n\n“…….”\n침묵 끝에 속삭임이 새어 나왔다.\n“정말, 굿이 시작된 뒤로 강은 더 붉어졌지 않나…”\n“맞아… 어쩌면 잘못된 걸지도 몰라.”\n\n찬성파 일부가 동요하며 발을 물렸다.\n무당은 북을 내려치려 했지만, 군중의 흔들림 속에 손을 떨며 멈췄다.\n\n붉은 강물은 여전히 물결쳤으나, 울림은 더 이상 이어지지 않았다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 중단된다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_stop_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "speechcraft": 1
+          },
+          "charisma": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_blood_river_16",
+      "text": "군중 앞에 섰지만, 고개를 젓는 이들이 먼저 눈에 띄었다.\n“듣지 마라! 외지인 말에 휘둘리면 화만 부른다!”\n\n코웃음과 야유가 퍼져나가며, 반대하던 이들마저 움츠러들었다.\n찬성파의 목소리가 더욱 커졌다.\n“굿을 이어야 한다! 이 길손은 우리를 방해하러 온 게다!”\n\n군중은 하나같이 무당 쪽으로 몰려들었다.\n북소리가 더욱 요란히 울려 퍼지며, 붉은 강물은 파도처럼 뒤틀렸다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "굿이 불안하게 이어진다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fail_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "speechcraft": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_exorcism_success_1",
+      "text": "북소리가 일정하게 이어지자, 붉게 물든 강물이 서서히 가라앉았다.\n핏빛 거품이 줄어들고, 탁하던 물결이 점차 맑아졌다.\n비린내도 옅어져, 바람 끝에선 시원한 냄새가 스쳤다.\n\n주민들이 환호를 터뜨렸다.\n“됐다! 신이 응답하셨다!”\n“무당이 재앙을 물리쳤어!”\n\n무당은 땀에 젖은 얼굴로 북을 내려놓으며 고개를 숙였다.\n“오늘은 당신의 도움이 컸소. 신께서도 그 뜻을 아시리라.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_success_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_exorcism_fiasco_1",
+      "text": "북소리가 흔들리며, 강물은 더욱 붉게 요동쳤다.\n핏빛 거품이 일더니, 강 가운데에서 안개가 솟구쳐 올랐다.\n안개 속에서 손 같은 형체가 뻗어나와, 굿판 한가운데 서 있던 무당을 붙잡았다.\n\n“악귀다!”\n주민들의 비명이 터지는 순간, 무당은 손아귀에 끌려 강 속으로 삼켜졌다.\n북소리는 허공에서 끊겼고, 강가는 순식간에 얼어붙었다.\n\n그러나 침묵은 오래가지 않았다.\n군중이 일제히 비명을 지르며 이리저리 달아나자, 강가는 곧 아수라장으로 변했다.\n안개 속 손들이 사방으로 뻗어나오며 사람들을 휘저었다.\n\n붉은 강은 요동치고, 비린내는 더욱 짙어졌다.\n혼돈의 한가운데, 당신은 결정을 내려야 했다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "부적술로 맞선다",
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_main_2_exorcism_fiasco_2"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_exorcism_fiasco_3"
+            },
+            "modifier": {
+              "stats": {
+                "wisdom": {
+                  "per_unit": 0.04
+                }
+              },
+              "skills": {
+                "talismanry": {
+                  "per_unit": 0.075
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "도망친다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_2_exorcism_fiasco_4"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_2_exorcism_fiasco_5"
+            },
+            "modifier": {
+              "stats": {
+                "agility": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "running": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_exorcism_stop_1",
+      "text": "북소리가 멎자, 붉은 강물의 출렁임도 잦아들었다.\n핏빛은 여전했지만, 더 퍼지지는 않았다.\n\n군중은 술렁이며 서로를 바라봤다.\n“이제 그만두는 게 옳았지.”\n“더 커지지 않았으니 다행이야.”\n\n무당은 창백한 얼굴로 북을 내려놓으며 고개를 떨구었다.\n“더는 이어갈 수 없소… 안개가 다시 내리면, 강은 또 피로 물들 것이오.”\n\n강가의 비린내는 옅어졌지만, 불길한 기운은 여전히 가시지 않았다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_stop_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_exorcism_fail_1",
+      "text": "막으려 했으나, 찬성파의 기세가 더 거셌다.\n북소리는 흔들렸으나 끊기지 않고 이어졌다.\n강물은 점점 더 붉어져, 피빛 파도가 강가를 철썩였다.\n\n군중이 고함을 주고받으며 서로 밀쳐댔다.\n“계속 이어라!”\n“멈추면 더 큰 화가 닥친다!”\n\n무당의 손은 떨리고 있었지만, 억지로 북을 내리치고 있었다.\n붉은 물결은 요동치며, 비린내는 숨 막히게 짙어졌다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fail_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_exorcism_success_2",
+      "text": "강가의 소란이 가라앉자, 주민들이 하나둘 다가왔다.\n주름진 손에서 작은 주머니가 내밀어졌다.\n\n“오늘은 감사했소.\n이건 우리 모두의 뜻이니, 부디 받아주시오.”\n\n안에는 엽전 몇 닢이 담겨 있었다.\n군중의 눈빛에는 고마움이 번져 있었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "엽전을 챙긴다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_success_3"
+          }
+        }
+      ],
+      "effects": {
+        "gold": 1
+      }
+    },
+    {
+      "id": "scn_main_2_exorcism_fiasco_2",
+      "text": "군중이 비명을 지르며 흩어지는 가운데, 당신은 허공에 흩날린 부적을 붙잡았다.\n급히 먹을 갈아 문양을 그리자, 부적이 은은한 빛을 내뿜었다.\n\n안개 속 손들이 몰려오던 순간, 부적에서 번개 같은 빛줄기가 터져 나왔다.\n형체들이 찢겨 사라지고, 강가를 덮던 안개가 일시적으로 물러났다.\n\n군중이 잠시 숨을 고르며 고개를 들었다.\n붉은 강은 여전히 요동쳤지만, 더 이상 손은 뻗어 나오지 않았다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fiasco_6"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "wisdom": 1,
+          "skills": {
+            "talismanry": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_exorcism_fiasco_3",
+      "text": "허공에 흩날린 부적을 붙잡아 문양을 그렸으나, 손끝이 떨리며 먹물이 번졌다.\n문양은 뒤틀려 검은 얼룩처럼 번지고, 부적은 바람에 찢겨 나갔다.\n\n그 순간, 안개 속 손이 튀어나와 팔을 움켜쥐었다.\n살갗이 얼어붙는 듯 차가운 통증이 퍼지며, 핏줄이 검게 변해 갔다.\n당신은 비틀거리며 손아귀를 뿌리쳤지만, 발목이 미끄러지며 바닥에 쓰러졌다.\n\n비명과 함께 사람들이 쓰러지고, 한 이가 발목을 잡힌 채 강 속으로 끌려갔다.\n\n주변은 아비규환이 되었고, 붉은 강물은 더욱 요동쳤다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fiasco_6"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "talismanry": 1
+          }
+        },
+        "health": -1
+      }
+    },
+    {
+      "id": "scn_main_2_exorcism_fiasco_4",
+      "text": "안개 속 손이 군중을 휘젓는 순간, 몸을 낮추어 사람들의 틈을 파고들었다.\n비명과 고함이 뒤섞였으나, 발끝은 잿빛 땅을 딛으며 빠르게 강가를 벗어났다.\n\n숨을 몰아쉬고 돌아보니, 당신의 자리는 이미 안개가 삼켜 버린 뒤였다.\n강가는 여전히 아수라장이었지만 당신은 최소한 그 손아귀에서 벗어났다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fiasco_6"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "agility": 1,
+          "skills": {
+            "running": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_2_exorcism_fiasco_5",
+      "text": "안개를 뚫고 몸을 날렸으나, 뒤엉킨 군중과 부서진 북의 잔해가 길을 가로막았다.\n발이 엉켜 넘어지는 순간, 싸늘한 기운이 발목을 붙잡았다.\n\n찬 손길이 다리를 감싸자, 눈앞이 아득하게 흔들렸다.\n간신히 몸을 비틀어 뿌리쳤지만, 살갗에 시퍼런 멍이 번져갔다.\n\n겨우 빠져나왔을 때, 강가에는 여전히 비명과 울음이 뒤섞여 있었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fiasco_6"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "running": 1
+          }
+        },
+        "health": -1
+      }
+    },
+    {
+      "id": "scn_main_2_exorcism_stop_2",
+      "text": "강가의 소란이 가라앉자, 주민들이 하나둘 다가왔다.\n주름진 손에서 작은 주머니가 내밀어졌다.\n\n“이건 우리 모두의 뜻이오. 부디 받아주시오.”\n\n안에는 엽전 몇 닢이 담겨 있었다.\n군중의 눈빛에는 두려움 대신 고마움이 번져 있었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "엽전을 챙긴다",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_stop_3"
+          }
+        }
+      ],
+      "effects": {
+        "gold": 1
+      }
+    },
+    {
+      "id": "scn_main_2_exorcism_fail_2",
+      "text": "마침내 무당이 북을 내려놓고 숨을 몰아쉬었다.\n땀에 젖은 얼굴로 고개를 떨구며 낮게 말했다.\n“…더는 이어갈 수 없소. 굿은 실패했소.”\n\n군중은 서로 얼굴을 보며 웅성거렸다.\n핏빛 강물은 여전히 출렁였고, 불길한 기운은 잦아들지 않았다.\n공포와 분노가 뒤섞인 시선들이 흩어진 강가를 맴돌았다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_2_exorcism_fail_3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_exorcism_success_3",
+      "text": "강물이 잠잠해진 뒤에도, 군중의 술렁임은 쉽게 가라앉지 않았다.\n그 사이로 한 청년이 다가왔다.\n종이뭉치를 품에 안고 선 그는, 우천 마을에서 스쳐 본 그 얼굴이었다.\n\n잠시 망설이는 듯하더니, 입술을 달싹였다.\n“…제가 틀렸던 것 같군요. 무당이 옳았을지도 모르겠습니다.”\n\n눈빛엔 여전히 고집이 남아 있었으나, 목소리만큼은 억눌러진 듯 차분했다.\n곧 스스로를 소개했다.\n“저는 정연이라 합니다. 마을마다 안개와 관련된 기록을 모으고 있지요.”\n\n정연은 손가락으로 종이뭉치를 움켜쥐며 당신을 바라봤다.\n“길손은… 누구십니까?”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "이름을 밝힌다",
+          "next": {
+            "scene_id": "scn_main_2_end_success_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_exorcism_fiasco_6",
+      "text": "강가는 여전히 공포에 휩싸여 있었다.\n핏빛 물결은 잦아들지 않았고, 안개 속 손이 사라진 뒤에도 사람들은 바닥에 주저앉아 떨고 있었다.\n\n그때, 낯익은 청년이 다가왔다.\n종이뭉치를 품에 안고 선 그는, 우천 마을에서 스쳐 보았던 그 얼굴이었다.\n\n잠시 침묵하던 그는 낮게 말을 꺼냈다.\n“…무당이 희생되었군요. 역시 굿은 답이 아니었나 봅니다.”\n\n그러다 시선을 돌리며 자신을 소개했다.\n“저는 정연이라 합니다. 마을마다 안개와 관련된 기록을 모으고 있지요.”\n\n정연은 종이뭉치를 움켜쥔 채, 당신을 바라봤다.\n“길손은… 누구십니까?”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "이름을 밝힌다",
+          "next": {
+            "scene_id": "scn_main_2_end_fail_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_exorcism_stop_3",
+      "text": "강가의 소란이 가라앉자, 한 청년이 군중을 헤치고 다가왔다.\n종이뭉치를 품에 안은 그는, 우천 마을에서 스쳐 본 얼굴이었다.\n\n잠시 망설이다가 입술을 달싹였다.\n“…굿이 이어졌어야 한다고 믿었습니다. 하지만 막상 보니… 멈춘 게 옳았는지도 모르겠습니다.”\n\n그의 눈빛엔 여전히 고집이 남아 있었으나, 목소리만큼은 억눌린 듯 차분했다.\n곧 스스로를 소개했다.\n“저는 정연이라 합니다. 마을마다 안개와 관련된 기록을 모으고 있지요.”\n\n정연은 손가락으로 종이뭉치를 움켜쥐며 당신을 바라봤다.\n“길손은… 누구십니까?”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "이름을 밝힌다",
+          "next": {
+            "scene_id": "scn_main_2_end_success_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_exorcism_fail_3",
+      "text": "그때, 한 청년이 군중을 헤치고 다가왔다.\n종이뭉치를 품에 안은 그는, 우천 마을에서 스쳐 본 얼굴이었다.\n\n잠시 머뭇거리던 그는 낮게 말을 꺼냈다.\n“…굿이 이어졌다면 달랐을까요. 하지만 결국 아무것도 지켜내지 못했군요.”\n\n그의 눈빛엔 뚜렷한 흔들림이 깃들어 있었다.\n곧 자신을 소개했다.\n“저는 정연이라 합니다. 마을마다 안개와 관련된 기록을 모으고 있지요.”\n\n정연은 종이뭉치를 움켜쥔 채, 당신을 똑바로 바라봤다.\n“길손은… 누구십니까?”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "이름을 밝힌다",
+          "next": {
+            "scene_id": "scn_main_2_end_fail_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_end_fail_1",
+      "text": "이름을 전하자, 정연은 고개를 끄덕였다.\n“…그렇군요. 오늘은 힘든 선택을 하셨군요.”\n\n붉은 강 쪽을 바라본 그의 눈빛은 여전히 무거웠다.\n“굿은 실패로 끝났지만… 그래도 아무것도 하지 않는 것보다는 나았습니다.”\n“적어도 누군가는 맞서려 했다는 걸, 이 마을 사람들도 기억하겠지요.”\n\n정연은 종이뭉치를 꼭 움켜쥐며 고개를 숙였다.\n“당신 같은 이를 만난 건 우연이 아닐지도 모르겠습니다. 언젠가 다시 뵙게 되겠지요.”\n\n그렇게 남긴 말 뒤로, 그는 흩어진 군중 속에 섞여 사라졌다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "떠난다",
+          "next": {
+            "scene_id": "scn_main_2_end_fail_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_2_end_success_1",
+      "text": "자신의 이름을 전하자, 정연은 천천히 고개를 끄덕였다.\n“…그렇군요. 오늘은 덕분에 더 큰 화를 막을 수 있었습니다.”\n\n그는 붉은 강 쪽으로 시선을 돌렸다.\n물결은 잠잠해졌지만, 붉은 기운은 여전히 바닥에 어른거렸다.\n“하지만 끝난 것이 아닙니다. 안개가 걷히지 않는 한, 이 강도 언젠가 다시 물들 겁니다.”\n\n말을 마친 그는 종이뭉치를 품에 꼭 안으며 고개를 숙였다.\n“오늘은 감사했습니다. 언젠가 다시 만나게 되겠지요.”\n\n그렇게 남긴 말 뒤로, 정연은 군중 사이에 섞여 사라졌다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "떠난다",
+          "next": {
+            "scene_id": "scn_main_2_end_success_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_intro",
+      "text": "<안개의 조선>\n\n멀리서 보이는 기와지붕은 어둑한 하늘 아래 차갑게 빛났다.\n마을에서 이어진 길 끝, 관아의 붉은 대문은 묵직하게 닫혀 있었다.\n\n문지기 포졸이 눈을 좁히며 다가온다.\n“이름은? 어디서 온 자냐.”\n그의 손에는 장부가, 시선은 의심으로 무겁다.\n\n잠시 망설이는 사이, 뒤편에서 또 다른 포졸들이 다가왔다.\n낯선 기척을 맡은 듯, 주변의 공기는 조용히 가라앉는다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "마을에서 오라 하여 왔다",
+          "next": {
+            "scene_id": "scn_main_3_1"
+          }
+        }
+      ],
+      "condition": {
+        "$and": [
+          {
+            "scene_count": {
+              "min": 70
+            }
+          },
+          {
+            "completed_scenes": {
+              "not_in": ["scn_main_1_leave"]
+            }
+          },
+          {
+            "$or": [
+              {
+                "completed_scenes": {
+                  "in": ["scn_main_2_end_fail_2"]
+                }
+              },
+              {
+                "completed_scenes": {
+                  "in": ["scn_main_2_end_fail_2"]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "scn_main_3_1",
+      "text": "포졸은 눈을 가늘게 뜨더니 고개를 끄덕였다.  \n“그래,  기억을 잃은 자로군.”  \n말을 마치자마자 손이 거칠게 팔을 붙잡는다.\n\n차가운 쇠내음이 풍기는 대문이 활짝 열리고, 안쪽으로 길게 이어진 마당이 드러난다.  \n여러 명의 포졸들이 무심한 눈빛으로 이곳을 지키고 있었다.  \n발걸음이 옮겨질수록 공기는 무겁게 가라앉았다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "얌전히 따라간다",
+          "next": {
+            "scene_id": "scn_main_3_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_2",
+      "text": "포졸이 팔을 거칠게 끌며 축축한 복도를 지나간다.  \n흙냄새와 곰팡내가 뒤섞인 어둠 속, 옆으로는 세 칸으로 나뉜 옥이 늘어서 있었다.\n\n첫 칸에는 고개를 떨군 이가 웅크려 앉아 숨만 내쉬고 있었고,  \n둘째 칸에는 벽에 기대 텅 빈 눈으로 천장을 바라보는 이가 보였다.  \n낯선 시선들이 문틈 사이로 따라오다 이내 흩어진다.\n\n마지막 칸 앞에서 포졸이 멈췄다.  \n낡은 나무문이 덜컥 열리며, 희미한 불빛 속 좁은 공간이 드러난다.  \n간수가 짧게 말했다.  \n“들어가라.”\n\n쇠사슬이 덜컥 닫히며 문이 굳게 잠겼다.  \n습한 공기만 방 안에 가라앉았다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "옥 안을 둘러본다",
+          "next": {
+            "scene_id": "scn_main_3_prison_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_1",
+      "text": "어둑한 방 안, 서너 명이 흩어져 앉아 있었다.\n한쪽에선 마른 소년이 옆으로 드러누워 팔꿈치로 머리를 괴고 있었다.\n입꼬리를 슬쩍 올리며 낮게 말한다.\n“어서 와, 신참.”\n\n그 곁에 있던 젊은 여자는 눈매를 가늘게 치켜세웠다.\n“지금 웃을 때야? 바보 같으니.”\n날카로운 말투지만, 시선은 냉정하게 나를 훑는다.\n\n구석에 앉아 있던 체격 큰 사내는 아무 말 없이 똑바로 바라보고 있었다.\n얼굴의 칼자국이 희미한 빛에 드러나자, 낮게 중얼거린다.\n“…또 하나 늘었군.”\n\n세 사람의 시선이 잠시 머물렀다 사라진다.\n쇠창살 너머로는 간수의 발자국 소리가 멀어졌다. 어떻게 해야 할까.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "꺼내달라고 외친다",
+          "next": {
+            "scene_id": "scn_main_3_prison_2"
+          }
+        },
+        {
+          "text": "이게 무슨 상황이지?",
+          "next": {
+            "scene_id": "scn_main_3_prison_3"
+          }
+        },
+        {
+          "text": "가만히 앉아있는다",
+          "next": {
+            "scene_id": "scn_main_3_prison_4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_2",
+      "text": "두 손으로 문을 두드리자, 차갑고 무거운 쇳소리가 옥사 안에 퍼졌다.\n그러나 복도 끝은 조용했다. 간수의 발자국조차 들리지 않는다.\n\n잠시 후, 젊은 여자가 짧게 말했다.\n“헛수고야. 아무도 대답 안 해.\n우릴 꺼내줄 생각이 있었다면, 애초에 여길 넣지도 않았겠지.”\n\n소년은 히죽 웃으며 손가락으로 귀를 막는 시늉을 했다.\n“괜히 시끄럽게 굴면 간수한테 혼날 걸? 난 벌써 두 번 혼났거든.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_3_prison_4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_3",
+      "text": "시선을 주자, 마른 소년이 먼저 말을 건넸다.\n“여긴 말이지. 다들 안개 속에서 툭 튀어나온 사람들이야.\n이름도 모르고, 집도 모르고, 아예 백지장처럼 서 있지.\n그러니 부를 땐 그냥 ‘야, 너’가 전부야.”\n소년은 히죽 웃으며 손을 내저었다.\n“웃기지 않아? 죄인도 아닌데 죄인처럼 끌려와 있잖아.”\n\n여자가 곧 시선을 돌려 창살을 스쳤다.\n“농담처럼 들리겠지만 사실이야.\n기억이 없는 게 문제가 아니야. 오래 있으면… 사람이 아니게 돼.”\n\n구석의 사내가 팔짱을 낀 채 묵묵히 있다가 낮게 내뱉었다.\n“…나는 직접 봤다. 이틀 사이 두 놈이 괴물로 변했지.\n포졸들이 와서 베어내고, 기록만 남기고 가더군.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_3_prison_4"
+          }
+        },
+        {
+          "text": "변한다고?",
+          "next": {
+            "scene_id": "scn_main_3_prison_4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_4",
+      "text": "고요를 가르듯, 옆 칸에서 낮은 신음이 새어 나왔다.\n“끄…으…”\n포로 하나가 바닥을 긁으며 몸을 떨고 있었다.\n\n순식간에 얼굴이 뒤틀리더니, 살갗에서 희뿌연 안개가 피어올랐다.\n손가락은 비정상적으로 길어지고, 눈동자가 겹겹이 번져 보였다.\n곁에 있던 포로들이 비명을 지르며 벽 쪽으로 밀려났다.\n\n철창이 요란하게 열리며 포졸들이 달려들었다.\n칼날이 번쩍이고, 괴이하게 변한 자의 몸을 가르자──\n핏방울 하나 남지 않고, 온몸이 흩어져 안개로 사라졌다.\n\n짧은 정적 후,\n간수들이 장부를 꺼내들더니, 낮게 중얼거리기 시작했다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_3_prison_6"
+          }
+        },
+        {
+          "text": "간수들의 대화에 집중한다",
+          "next": {
+            "scene_id": "scn_main_3_prison_5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_5",
+      "text": "귀를 기울이자, 복도 저편에서 낮은 목소리가 새어 들려왔다.\n“한양의 그것은 아직도 퇴치되지 않았단 말인가…”\n말끝에는 피로와 체념이 묻어 있었다.\n\n다른 이가 곁에서 속삭였다.\n“듣자하니, 지난번엔 학자들이 막아보겠다 나섰다지.\n결국 모조리 몰살당했다더군.\n게다가… 궁궐 깊숙이 그것이 자리 잡았단 얘기도 들었어.”\n\n순간, 날카로운 음성이 대화를 끊어냈다.\n“그만. 우린 기록만 남기라 했을 뿐이다.\n쓸데없는 소리, 입에 담지 마라.”\n\n이후론 아무 소리도 들리지 않았다.\n눅눅한 정적만이 다시 옥사 안을 채웠다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_3_prison_6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_6",
+      "text": "괴이로 변한 포로가 안개로 흩어진 뒤, 방 안은 숨소리조차 무겁게 가라앉았다.\n잠시 침묵을 지키던 여자가 입을 열었다.\n“봤지? 곧 있으면 우리도 저 꼴이야.”\n눈빛은 차갑게 떨리고 있었다.\n",
+      "type": "main",
+      "choices": [
+        {
+          "text": "탈출하자",
+          "next": {
+            "scene_id": "scn_main_3_prison_7"
+          }
+        },
+        {
+          "text": "얌전히 있는다",
+          "next": {
+            "scene_id": "scn_main_3_prison_8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_7",
+      "text": "당신이 탈출하겠다는 의지를 드러내자, 눅눅하던 공기가 가볍게 흔들렸다.\n\n소년이 제일 먼저 히죽 웃었다.\n“좋은 생각이야, 신참. 여기 앉아만 있으면 뼈도 못 추릴 테니까.”\n가벼운 말투였지만, 눈빛엔 묘한 안도감이 스쳤다.\n\n여자는 팔짱을 낀 채 낮게 맞장구쳤다.\n“맞아. 오래 버틸 수 있는 곳이 아니지.”\n말끝은 짧았지만, 단호한 확신이 담겨 있었다.\n\n구석의 사내는 천천히 고개를 들어 당신을 바라보더니, 묵묵히 끄덕였다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "어떻게 탈출하지?",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_8",
+      "text": "아무 말도 하지 않고, 벽에 기댄 채 가만히 앉아 있었다.\n시간은 천천히 흘러갔고, 빛조차 닿지 않는 방 안은 낮과 밤의 구분도 흐려졌다.\n\n하루가 지나자, 소년이 먼저 몸을 떨기 시작했다.\n농담을 흘리던 입이 굳어지고, 손끝에서 희뿌연 안개가 새어 나왔다.\n“안 돼…” 여자의 목소리가 떨리는 순간, 철창이 열리고 포졸들이 들이닥쳤다.\n칼끝이 번쩍이자 소년의 몸은 안개로 흩어져 사라졌다.\n\n이틀째, 여자의 눈빛이 흔들렸다.\n손톱으로 벽을 긁으며 숨을 몰아쉬다, 얼굴이 일그러져 갔다.\n“제발…” 짧은 비명과 함께 그녀 역시 안개에 삼켜졌다.\n간수는 장부에 짧게 기록만 남겼다.\n\n남은 건 사내와 당신 뿐이었다.\n그는 이를 악물고 버티려 했지만, 셋째 날, 무겁게 울리는 신음 끝에 형체가 무너져 내렸다.\n거대한 그림자 같은 팔이 철창을 치며 뻗어나왔다.\n포졸들이 몰려들었지만, 이번엔 제압이 더뎠다.\n\n그 혼란 속에서, 짙은 안개가 방 안을 삼켰다.\n냉기 어린 기운이 목덜미를 훑고, 이빨 같은 형상이 어둠 속에서 번뜩였다.\n\n마지막으로 보인 것은──안개 속에서 다가오는 괴물의 눈뿐이었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "정신이 아득해진다"
+        }
+      ],
+      "effects": {
+        "special_effects": {
+          "force_gameover": true
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_prison_break_1",
+      "text": "“한번 생각해보자고.”\n소년이 입꼬리를 올리며 방 안을 훑었다.\n\n사내가 팔짱을 낀 채 낮게 말했다.\n“…나는 머릴 굴리는 건 잘 모르겠다. 하지만 힘을 쓴다면 맡겨라.”\n굵은 손이 무심히 벽을 두드리자, 묵직한 울림이 방 안을 타고 번졌다.\n\n소년이 히죽 웃으며 말을 받았다.\n“벽이라도 부숴보는 건 어때? 간수들 눈이 동그래질거야.\n아니면 교대 때 오는 어리바리한 간수, 그놈을 살살 구슬리는 것도 괜찮지 않을까?”\n\n여자는 창살에 손끝을 올리며 고개를 끄덕였다.\n“교대 시간… 그때라면 틈은 있어. 자물쇠도 허술하지.\n움직일 거라면 그때가 적기야. …문제는 그 뒤지. 옥사만 벗어난다고 끝이 아니거든.”\n\n각자의 말이 공기 속에 겹쳐지며, 조금씩 방향을 찾아가고 있었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "옥사를 나간 뒤엔 어떡하지?",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_break_2",
+      "text": "여자가 먼저 입술을 깨물며 시선을 들어올렸다.\n“옥사만 벗어난다고 끝이 아니야. 밖은 바로 마당, 정문은 횃불이 줄지어 있고 포졸이 잔뜩이야.”\n\n“그렇다니까, 머리 아프게 복잡해.”\n소년이 팔짱을 낀 채 벽에 기대더니, 히죽 웃으며 말을 이었다.\n“차라리 다른 옥사 문을 전부 열어버리면 재밌겠지 않아? 포졸들 혼쭐이 나면 우린 그 틈에 슬쩍 빠져나가고.”\n가볍게 농담처럼 흘리면서도, 눈동자는 반짝이며 반응을 살폈다.\n\n구석의 사내는 팔을 툭 내려놓고, 무겁게 숨을 몰아쉬었다.\n“…그런 거 필요 없다. 막아서는 놈들이 있으면, 그냥 뚫고 나가면 된다.”\n마치 사실을 말하듯 담담했지만, 굵은 어깨에서 묘한 든든함이 배어 나왔다.\n\n여자가 다시 창살에 손끝을 올렸다.\n“뒷문도 있지. 창고랑 이어져 있는데, 담장 뒤 풀숲이 무성해. 몸만 낮추면 소리 없이 나갈 수 있어.”\n\n소년이 두 손을 툭 털며 웃음을 삼켰다.\n“뭐, 이렇게 길은 많네. 머리 싸매고 정해봤자 소용 있나. 일단 나가서 결정하자고.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "교대 시간을 기다린다",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_break_3",
+      "text": "멀리서 쇳소리가 땅속을 울리듯 울렸다.\n잠시 뒤, 복도를 타고 종소리가 퍼졌다—교대의 신호였다.\n철창 너머 발소리가 분주해지고, 횃불 그림자가 흔들리며, 잠깐 눈이 비는 순간—옥사는 이례적으로 고요했다.\n\n소년이 히죽 웃으며 몸을 앞으로 기울였다.\n“때가 됐네. 시작해볼까?”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "간수를 구슬린다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_3_prison_break_4"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_prison_break_7"
+            },
+            "modifier": {
+              "stats": {
+                "charisma": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "speechcraft": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "자물쇠를 푼다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_3_prison_break_5"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_prison_break_8"
+            },
+            "modifier": {
+              "stats": {
+                "agility": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "dexterity": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "벽을 부순다",
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_main_3_prison_break_6"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_prison_break_9"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.04
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_break_4",
+      "text": "소년이 눈을 반짝이며 몸을 기울였다.\n“마침 왔네. 저 간수, 여자 얘기만 나오면 정신 못 차리거든.”\n소년은 옆에 앉은 여자를 턱짓으로 가리키며 웃었다.\n“네가 한마디만 해주면, 문짝은 스스로 열릴 걸?”\n\n여자의 눈썹이 파르르 떨렸다.\n“내가 왜?!”\n“방법은 그게 제일 확실해. 신참도 동의하지?”\n소년은 능글맞게 웃으며 손을 휘저었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "잠시 후",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_10"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "charisma": 1,
+          "skills": {
+            "speechcraft": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_prison_break_5",
+      "text": "복도가 잠시 고요해졌다.\n여자가 몸을 낮추며 속삭였다.\n“지금이야. 내가 지켜볼 테니, 네가 해.”\n\n그녀는 손바닥을 슬쩍 열어 보였다.\n녹슨 바늘 하나가 숨겨져 있었다.\n“아까 끌려올 때 주운 거야. 이런 게 은근히 쓸모 있거든.”\n\n당신이 그것을 받아 자물쇠에 손끝을 대자, 차갑고 거친 금속이 피부를 스쳤다.\n“천천히. 왼쪽으로… 그렇지.”\n\n덜컥─ 금속이 풀리는 소리가 어둠 속에 울렸다.\n소년이 작게 휘파람을 불었다.\n“이야, 신참. 손끝이 제법인데?”\n\n여자가 미묘하게 고개를 끄덕이며 말했다.\n“길이 열렸어. 서두르자.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "옥사를 빠져나간다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "dexterity": 1
+          },
+          "agility": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_prison_break_6",
+      "text": "당신이 벽 쪽으로 다가가 손을 짚자, 축축한 흙과 낡은 목재의 감촉이 전해졌다.\n소년이 어이없다는 듯 웃음을 터뜨렸다.\n“설마, 신참. 진짜 그걸 부숴보겠다는 거야? 여긴 옥사야, 헛간이 아니라고.”\n\n당신이 어깨를 들이밀자, 사내가 묵묵히 옆에 섰다.\n“좋다. 같이 힘을 쓰자.”\n\n두 사람이 동시에 몸을 실으니, 처음엔 끄떡없던 벽이 곧 우지직 갈라지며 흙먼지가 흩날렸다.\n소년이 눈을 크게 뜨며 외쳤다.\n“…진짜 된다고?”\n\n여자가 숨을 고르며 균열 너머를 살폈다.\n“길이 열렸어. 어서 빠져나가자.”\n\n갈라진 벽 너머로 어둑한 통로가 드러났다.\n차갑고 눅눅한 바람이 스며들며, 방 안의 공기를 흔들었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "옥사를 빠져나간다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "strength": 1
+        },
+        "set_flags": ["noise_office"]
+      }
+    },
+    {
+      "id": "scn_main_3_prison_break_7",
+      "text": "소년이 히죽 웃으며 속삭였다.\n“좋아, 신참. 같이 한마디만 거들어줘. 저 간수, 말발에 약하다니까.”\n\n곧 복도를 지나가던 간수에게, 소년이 과장된 손짓을 했다.\n“거기 형님~ 오늘따라 얼굴이 빛이 나네요! 잠깐만 얘기 좀 하고 가요!”\n당신도 고개를 들어 맞장구를 쳤다.\n\n간수가 잠시 멈칫했으나, 곧 시큰둥한 표정으로 고개를 돌리고 그냥 지나가 버렸다.\n“….”\n\n소년이 멋쩍게 머리를 긁적였다.\n“어…. 원래는 잘 먹히는데 말이지. 오늘은 꽝이네.”\n\n여자가 차갑게 한숨을 내쉬었다.\n“이래선 안 돼. 다음 교대를 노려야 해.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "다음 교대 시간을 기다린다",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_3"
+          }
+        },
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_fail_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "speechcraft": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_prison_break_8",
+      "text": "복도가 잠시 고요해졌다.\n여자가 몸을 낮추며 속삭였다.\n“지금이야. 내가 지켜볼 테니, 네가 해.”\n\n그녀는 손바닥을 슬쩍 열어 보였다.\n녹슨 바늘 하나가 숨겨져 있었다.\n“아까 끌려올 때 주운 거야. 이런 게 은근히 쓸모 있거든.”\n\n당신이 그것을 받아 자물쇠에 손끝을 대자, 삐걱거리는 금속음이 방 안을 가득 울렸다.\n“아냐, 너무 세. 천천히—”\n\n그러나 이미 늦었다. 복도에서 발소리가 다가왔다.\n소년이 얼굴을 찡그리며 속삭였다.\n“아차, 들킨 거 아냐?”\n\n여자는 이를 악물며 손을 거뒀다.\n“안 돼… 시끄럽게 굴 뻔했어. 다음 기회를 노려야 해.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "다음 교대 시간을 기다린다",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_3"
+          }
+        },
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_fail_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "dexterity": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_prison_break_9",
+      "text": "당신이 벽 쪽으로 다가가 손을 짚자, 축축한 흙과 낡은 목재의 감촉이 전해졌다.\n소년이 어이없다는 듯 웃음을 터뜨렸다.\n“설마, 신참. 진짜 그걸 부숴보겠다는 거야? 여긴 옥사야, 헛간이 아니라고.”\n\n사내가 옆에 서더니 낮게 중얼거렸다.\n“…그래도 해보자.”\n\n둘이 함께 어깨로 벽을 밀어붙였다.\n흙먼지가 흩날리며 묵직한 소리가 울렸지만, 벽은 꿈쩍도 하지 않았다.\n소년이 머리를 긁적이며 한숨을 내뱉었다.\n“봤지? 괜히 힘만 뺐잖아.”\n\n여자는 입술을 깨물며 낮게 말했다.\n“괜히 소란만 냈어. 더 움직이면 들킬 거야. …다음 교대를 노려보자.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "다음 교대 시간을 기다린다",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_3"
+          }
+        },
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_3_prison_break_fail_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_break_fail_1",
+      "text": "교대의 종소리가 멎자, 복도는 다시 발소리로 가득 찼다.\n횃불 그림자가 벽에 어지럽게 흔들리며, 간수가 고개를 돌렸다.\n\n“시끄럽다 했더니… 안에서 뭔가를 꾸미는 모양이군.”\n간수가 잠시 안을 훑어보더니, 고개를 돌려 복도 너머로 소리쳤다.\n“이 방 수상하다. 다른 놈들 불러와!”\n멀리서 발걸음이 몰려오는 소리가 점점 가까워졌다.\n\n소년은 웃음을 잃고 입술을 깨물었고, 여자는 차갑게 눈을 내리깔았다.\n숨조차 막히는 긴장이 방 안을 짓눌렀다.\n\n그때, 구석에 앉아 있던 사내가 천천히 몸을 일으켰다.\n“…이제 다른 길은 없다.”\n사내의 시선이 곧장 당신을 향했다.\n\n“같이 힘을 쓰자. 지금 아니면 기회는 없다.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "문을 부순다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_3_prison_break_fail_2"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_prison_break_fail_3"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.045
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_break_10",
+      "text": "허술해 보이는 간수가 복도를 따라 다가왔다.\n소년이 눈짓을 보내자, 여자는 이를 갈듯 낮게 속삭이며, 창살 곁으로 다가갔다.\n“…죽고 싶지 않으니까, 하는 거야.”\n\n“…저기… 잠깐만요. 오늘따라… 멋져 보이네…. 문 가까이 와줄래요?”\n\n간수는 실없는 웃음을 흘리며 망설이다가, 결국 덜컥 문을 열고 다가왔다.\n그 순간, 사내가 번개처럼 팔을 뻗어 끌어당겼고, 소년이 뒤에서 몸을 밀었다.\n\n짧은 몸싸움 끝에 간수는 바닥에 쓰러졌다.\n“거봐, 통한다니까.” 소년이 숨죽여 웃었다.\n\n여자는 얼굴을 붉히며 고개를 홱 돌렸다.\n“…다시는 시키지 마.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "옥사를 빠져나간다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_prison_break_fail_2",
+      "text": "간수가 눈앞에서 소리치려던 순간,\n사내의 굵은 팔이 창살을 잡아당기고,\n당신도 그를 도와 힘껏 어깨를 밀어붙였다.\n\n삐걱─ 금속이 휘며 벌어지더니, 마침내 부러져 나갔다.\n쾅, 부러진 쇠조각이 튀며 간수의 가슴팍을 스쳤다.\n그 충격에 간수가 비명을 삼키고 뒤로 물러나 비틀거렸다.\n\n소년이 환호성을 삼켰고, 여자는 놀란 눈으로 숨을 고르며 외쳤다.\n“지금이야, 나가자!”\n\n당신은 그 틈을 놓치지 않고 몸을 던졌다.\n복도를 가르는 차가운 공기 속으로 발걸음이 쏟아졌다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "옥사를 빠져나간다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "strength": 1
+        },
+        "set_flags": ["noise_office"]
+      }
+    },
+    {
+      "id": "scn_main_3_prison_break_fail_3",
+      "text": "굵은 팔이 창살을 움켜쥐자, 쇠가 삐걱거렸다.\n당신도 어깨를 밀어붙였지만, 창살은 꿈쩍도 하지 않았다.\n피와 땀이 뒤섞이며 쇠가 미약하게 흔들렸을 뿐이었다.\n\n“뭐 하는 거냐!”\n포졸들의 고함과 함께, 무거운 발소리가 복도를 뒤흔들었다.\n\n순식간에 문이 열리고, 철제 곤봉이 쏟아졌다.\n사내가 앞을 막아섰지만, 숫자는 압도적이었다.\n소년의 웃음은 사라졌고, 여자의 눈빛도 서서히 꺼져갔다.\n마지막으로 들린 건, 사내의 낮은 외침이었다.\n\n안개 같은 어둠이 시야를 삼키며, 모든 것이 사라졌다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "정신이 아득해진다"
+        }
+      ],
+      "effects": {
+        "special_effects": {
+          "force_gameover": true
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_1",
+      "text": "옥사에서 빠져나오자, 차가운 밤공기가 얼굴을 스쳤다.\n넓은 마당 한가운데는 횃불이 늘어서 있었고, 정문 앞에는 포졸들이 모여 있었다.\n뒷문 쪽으로는 어둑한 창고와 담장이 보였다.\n\n여자가 낮게 숨을 고르며 주위를 살폈다.\n“…말했던 대로야. 더 늦기 전에 어디로 나갈지 정해야 해.”\n\n사내는 어깨를 한번 굴리며 묵직하게 숨을 내쉬었다.\n소년은 히죽 웃으며 작게 휘파람을 불었다.\n\n세 사람의 시선이 동시에 당신에게 모였다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "혼란을 유발한다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_2"
+          }
+        },
+        {
+          "text": "정면돌파한다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_3"
+          }
+        },
+        {
+          "text": "은밀히 빠져나간다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_4"
+          },
+          "condition": {
+            "flags": {
+              "not_in": ["noise_office"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_government_break_2",
+      "text": "다른 포로들이 갇혀있는 옆 옥사로 다가가자, 녹슨 자물쇠가 눈에 들어왔다.\n손끝이 쇠를 건드리자, 철컥—낡은 금속음이 복도에 날카롭게 퍼졌다.\n\n안에 있던 포로들이 술렁이자, 복도는 금세 소란스러워졌다.\n\n멀리서 횃불빛이 어른거렸다.\n“뭐야, 왜 이렇게 시끄러워?”\n두 명의 포졸이 고개를 돌리며 이쪽으로 다가오기 시작했다.\n\n소년이 이를 갈며 속삭였다.\n“큰일 났어, 들킨다!”\n",
+      "type": "main",
+      "choices": [
+        {
+          "text": "서둘러 자물쇠를 푼다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_3_government_break_5"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_government_break_7"
+            },
+            "modifier": {
+              "stats": {
+                "agility": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "dexterity": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "시선을 끈다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_3_government_break_6"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_government_break_8"
+            },
+            "modifier": {
+              "stats": {
+                "wisdom": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "observation": {}
+              }
+            }
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "wisdom": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_3",
+      "text": "당신이 발걸음을 정문 쪽으로 옮기자, 세 동료도 주저 없이 뒤를 따랐다.\n넓은 마당을 가로지르자, 횃불이 일제히 번쩍이며 포졸들의 시선이 몰려왔다.\n\n“누구냐! 멈춰라!”\n날카로운 고함과 함께 칼끝이 번뜩였다.\n\n사내가 앞으로 나섰다. 굵은 주먹이 천천히 움켜쥐어지며, 묵직한 숨이 마당을 울렸다.\n“…좋아. 막아서는 놈들은 내가 처리한다.”\n\n소년은 입술을 깨물다 이내 히죽 웃으며 외쳤다.\n“어차피 들킨 거, 한 판 벌여보자고!”\n\n횃불 불빛이 흔들리며, 수십 쌍의 눈이 일제히 당신을 겨눴다.\n숨 막히는 정적 끝에─\n발소리가 폭풍처럼 터져 나왔다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "정면돌파한다",
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_main_3_government_break_9"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_government_break_10"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.04
+                }
+              },
+              "skills": {
+                "martial_arts": {
+                  "per_unit": 0.075
+                }
+              },
+              "items": {
+                "sword": {
+                  "per_unit": 0.075
+                }
+              }
+            }
+          }
+        }
+      ],
+      "effects": {
+        "set_flags": ["noise_office"]
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_4",
+      "text": "당신 일행은 낮게 몸을 숙이며 창고 곁 풀숲으로 파고들었다.\n풀잎이 스치는 소리조차 크게 들릴 만큼, 주변은 숨 막히게 고요했다.\n\n창고 뒤편, 담장 너머가 뒷문과 이어져 있었다.\n“좋아, 조금만 더 가면 돼.” 여자가 낮게 속삭였다.\n\n그러나─\n갑작스런 쇠사슬 소리와 함께, 창고 그늘에서 덩치 큰 개가 고개를 들었다.\n코끝을 벌름거리다 이쪽을 발견하자,\n곧 “컹! 컹컹—!” 밤공기를 찢는 짖음이 울려 퍼졌다.\n\n사내의 얼굴이 굳어졌다.\n“…이 소리, 곧 포졸들이 달려올 거다.”\n“아저씨, 힘 세다며? 서열 정리 좀 해봐.”\n농담 섞인 말과는 다르게, 소년 역시 긴장으로 손끝이 떨리고 있었다.\n\n짖어대는 개, 멀리서 번져오는 횃불빛─\n지금 선택하지 않으면, 은밀히 나갈 기회는 사라질 것이다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "빠르게 빠져나간다",
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_3_government_break_11"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_government_break_12"
+            },
+            "modifier": {
+              "stats": {
+                "agility": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "running": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "개를 달랜다",
+          "next": {},
+          "probability": {
+            "base_rate": 0.3,
+            "success_next": {
+              "scene_id": "scn_main_3_government_break_13"
+            },
+            "failure_next": {
+              "scene_id": "scn_main_3_government_break_14"
+            },
+            "modifier": {
+              "stats": {
+                "charisma": {
+                  "per_unit": 0.045
+                }
+              },
+              "skills": {
+                "affinity": {
+                  "per_unit": 0.09
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_government_break_5",
+      "text": "당신은 다가오는 발자국 소리에 아랑곳하지 않고 몸을 낮췄다.\n차갑고 낡은 자물쇠에 손끝을 얹자, 쇳소리가 삐걱거리며 울려 퍼졌다.\n\n심장이 쿵쿵 뛰는 사이, 땀이 식은 손바닥을 타고 흘렀다.\n쇠심이 맞물리지 않고 버티자, 숨이 막힐 듯 긴장이 몰려왔다.\n\n“어서…!”\n여자가 이를 악물고 속삭였다.\n소년은 잔뜩 굳은 얼굴로 눈을 치켜뜨며 손짓을 재촉했다.\n\n그 순간──딸깍!\n금속이 부러지듯 풀리며, 자물쇠가 바닥으로 떨어졌다.\n\n“됐어!”\n소년이 억눌린 환호성을 삼켰고, 여자의 눈빛이 번쩍였다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "옥의 문을 연다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_15"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "agility": 1,
+          "skills": {
+            "dexterity": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_6",
+      "text": "당신은 순간적으로 숨을 죽이고, 흔들리는 횃불빛 사이로 시선을 굴렸다.  \n소년이 눈을 크게 뜨며 속삭였다.\n“뭐라도 해! 저놈들 다 오기 전에!”\n\n당신은 곧장 자물쇠에서 손을 떼고, 발치의 흙덩이를 들어 복도 반대편으로 던졌다.\n쾅, 무너지는 소리가 울리자, 포졸들이 동시에 고개를 돌렸다.\n\n“뭐야, 저쪽에서 뭔가 떨어진 건가?”\n“젠장, 또 쥐새끼들이지 뭐.”\n\n포졸 둘은 서로 욕설을 내뱉으며 소리 난 쪽으로 발걸음을 옮겼다.\n\n소년이 히죽 웃으며 당신의 어깨를 툭 쳤다.\n“방금은 진짜 아슬아슬했어. 덕분에 살았네.”",
+      "type": "main",
+      "choices": [
+        {
+          "text": "옥의 문을 연다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_15"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "observation": 1
+          },
+          "wisdom": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_7",
+      "text": "당신은 손끝을 곧게 세우고 자물쇠에 집중했다.\n쇳심이 맞물리는 듯하더니, 곧 —뚝, 금속편이 어긋나며 자물쇠가 꿈쩍도 하지 않았다.\n\n그 순간──\n“거기서 뭐 하는 거야!”\n포졸의 고함이 복도를 가르며 터졌다. 횃불 불빛이 벽을 타고 출렁이고, 무거운 발소리가 쏟아졌다.\n\n소년이 얼굴을 찡그리며 이를 갈았다.\n“아차… 완전히 들켰네!”\n\n여자가 당신의 팔을 거칠게 잡아끌며 내뱉었다.\n“시간 없어! 이제 정면으로 뚫는 수밖에 없어!”\n“…좋다. 이제는 얌전히 빠져나갈 수 없다. 끝까지 밀어붙이자.”\n사내가 앞으로 나서며 굵은 숨을 내쉬었다.\n\n남은 선택은 단 하나──정면 돌파였다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "정면돌파한다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_3"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "dexterity": 1
+          }
+        },
+        "set_flags": ["noise_office"]
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_8",
+      "text": "당신은 다가오는 횃불빛을 보며 재빨리 입술을 열었다.\n“잠깐, 잠깐! 아무 일도 아니오. 그냥—이 안에서 쥐가 기어 나와서….”\n\n소년이 황급히 맞장구쳤다.  \n“맞아, 맞아! 엄청 큰 놈이었어! 이야… 겨우 잡았네!”\n\n그러나 포졸들의 발소리는 오히려 더 빠르게 다가왔고, 횃불 불빛이 벽을 타고 출렁였다.\n“거기서 뭐 하는 거야!”\n번개처럼 터진 고함이 어둠을 찢었다.\n\n소년이 얼굴을 찡그리며 속삭였다.\n“…아차, 들켰잖아! 이건 최악인데?”\n\n사내가 앞으로 나서며 굵은 숨을 내뱉었다.  \n“…좋다. 이제는 얌전히 빠져나갈 수 없다. 끝까지 밀어붙이자.”\n\n남은 선택은 단 하나──정면 돌파였다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "정면돌파한다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_3"
+          }
+        }
+      ],
+      "effects": {
+        "set_flags": ["noise_office"],
+        "exp": {
+          "skills": {
+            "observation": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_9",
+      "text": "사내가 굵은 팔로 포졸들을 밀어붙였다.\n당신도 곧장 어깨를 실어 함께 돌파하자, 벽처럼 가로막던 줄이 무너져 나갔다.\n거친 숨소리와 함께 길이 열렸다.\n\n소년은 곧장 옆으로 뛰어들더니, 횃불을 걷어차며 고함을 질렀다.\n“여기다! 잡아봐라!”\n흩어진 불빛에 시야가 흔들리고, 포졸들의 발걸음이 우왕좌왕 엉켰다.\n\n그 틈을 놓치지 않고 여자가 날렵하게 앞으로 튀어나갔다.\n정문 앞을 지키던 둘의 손목을 차례로 꺾어내며, 짧게 외쳤다.\n“멍하니 있지 마! 빨리!”\n\n쿵— 묵직한 어깨가 대문을 밀어젖히자, 삐걱이는 나무가 열리며 차가운 밤공기가 몰려들었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "관아 밖으로 나간다",
+          "next": {
+            "scene_id": "scn_main_3_escape_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          },
+          "strength": 1
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_10",
+      "text": "사내가 낮게 외치며 어깨를 들이밀었다.\n당신도 곧장 몸을 실어 함께 밀어붙였으나──\n순간, 발밑이 미끄러졌다.\n균형이 어긋난 찰나, 쇠창이 옆구리를 파고들었다.\n\n“큭…!”\n사내가 이를 갈며 버텼지만, 이미 틈은 벌어졌다.\n우르르 몰려든 포졸들이 사슬을 던져 두 사람의 팔을 묶었다.\n\n소년이 허겁지겁 횃불을 차올리며 소리쳤다.\n“이쪽이다! 그쪽 보지 말고 날 잡아—!”\n그러나 불꽃은 허공에 흩어졌고, 곤봉이 그의 머리를 정통으로 내려쳤다.\n축 늘어진 몸이 어둠 속으로 쓰러졌다.\n\n여자가 끝까지 몸을 날려 정문을 지키던 둘을 제압하려 했으나, 뒤에서 덮쳐든 창날이 허리를 꿰뚫었다.\n짧은 숨소리와 함께, 그녀의 손끝이 허공을 긁다 힘없이 떨어졌다.\n\n마지막으로, 사내의 굵은 몸이 포졸들에게 짓눌리며 피투성이로 가라앉았다.\n그의 눈빛은 끝까지 꺼지지 않았지만──\n창들이 한꺼번에 내려찍히자, 모든 것이 붉은 안개로 흩어졌다.\n\n【Bad End : 무리한 돌파】",
+      "type": "main",
+      "choices": [
+        {
+          "text": "정신이 아득해진다"
+        }
+      ],
+      "effects": {
+        "special_effects": {
+          "force_gameover": true
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_11",
+      "text": "당신은 더 지체할 틈이 없음을 직감했다.  \n“지금이야, 뛰어!”  \n\n네 사람의 몸이 동시에 풀숲을 헤치며 앞으로 나아갔다.\n잡초와 가지가 옷자락을 붙잡았지만, 당신은 날렵하게 몸을 낮춰 빠져나갔다.\n\n묶여 있던 개가 목줄을 잡아당기며 미친 듯이 짖어댔다.\n짖음은 순식간에 마당을 울리고, 멀리서 포졸들의 고함이 들려왔다.\n“뭐야! 무슨 일이야!”\n\n그러나 이미 당신과 일행은 풀숲을 빠져나와 낡은 뒷문에 다다랐다.\n덜컥—쇠붙이가 허술하게 흔들리며, 문은 쉽게 열렸다.\n\n등 뒤로는 횃불들이 요란하게 번쩍였지만, 당신과 동료들은 이미 담장 너머로 몸을 감추고 있었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "관아 밖으로 나간다",
+          "next": {
+            "scene_id": "scn_main_3_escape_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "running": 1
+          },
+          "agility": 1
+        },
+        "set_flags": ["noise_office"]
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_12",
+      "text": "“지금이야, 뛰어!”\n세 사람이 앞서 몸을 날리듯 풀숲을 헤쳤다.\n\n당신도 따라 나섰지만, 발목을 붙잡는 잡초와 얽힌 담장뿌리에 걸려 순간 몸이 느려졌다.\n옷자락이 나뭇가지에 찢기며, 발걸음이 꼬였다.\n\n그 사이 묶여 있던 개가 미친 듯 짖어대며 목줄을 당겼다.\n포졸들의 고함이 곧 이어졌다.\n“저기다! 막아라!”\n\n횃불빛이 순식간에 사방을 뒤덮었다.\n여자가 이를 악물며 손을 내밀었지만, 이미 늦었다.\n사내가 돌아서려 했으나, 수십 개의 창끝이 네 사람을 에워쌌다.\n\n소년이 작게 중얼거렸다.\n“…망했네.”\n\n다음 순간, 쇠사슬이 쾅 울리며 목덜미를 낚아챘다.\n당신과 동료들은 무자비하게 땅바닥으로 내동댕이쳐졌다.\n\n짖음과 고함, 차가운 쇠붙이의 소리가 뒤엉키며──모든 것이 어둠 속으로 가라앉았다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "정신이 아득해진다"
+        }
+      ],
+      "effects": {
+        "set_flags": ["noise_office"],
+        "special_effects": {
+          "force_gameover": true
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_13",
+      "text": "묶여 있던 개가 으르렁거리며 이빨을 드러냈다.\n당신은 잠시 발걸음을 멈추더니 몸을 낮췄다.\n\n손끝이 조심스레 땅바닥을 스치며 향기 섞인 흙을 쥐어 내밀자,\n개는 날카롭게 짖다 말고 코끝을 킁킁거리며 멈칫했다.\n\n그 틈에 일행은 소리 없이 풀숲을 헤치고 나아갔다.\n사내가 어깨로 잡초를 밀어내고, 소년이 숨죽인 채 손짓으로 길을 이끌었다.\n여자는 맨 뒤에서 주변을 살피며 발자국을 최소화했다.\n\n멀리서 포졸의 횃불빛이 흔들렸지만, 개는 더 이상 소란을 내지 않았다.\n당신은 마지막으로 몸을 낮춰 풀숲을 빠져나왔고,\n낡은 뒷문이 덜컥 열리며 차가운 밤공기가 몰려들었다.\n\n네 사람은 함께 담장 너머로 몸을 감췄다.\n뒤편 관아는 여전히 고요했다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "...",
+          "next": {
+            "scene_id": "scn_main_3_escape_1"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "charisma": 1,
+          "skills": {
+            "affinity": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_14",
+      "text": "당신은 몸을 낮춰 개 앞에 손을 내밀었다.\n개는 순간 울컥 짖음을 멈추는 듯했지만──\n\n으르르릉!\n목줄을 잡아당기며 날카로운 울음소리를 폭발시켰다.\n\n짖음은 순식간에 마당을 뒤흔들었고, 포졸들이 횃불을 들고 달려왔다.\n“거기서 뭐 하는 거야!”\n\n소년이 얼굴을 찡그리며 뒤로 물러섰다.\n여자가 이를 악물었지만 이미 늦었다.\n사내가 앞으로 나서려 했으나, 수십 개의 창끝이 네 사람을 둘러쌌다.\n\n차가운 쇠사슬이 덜컥 울리며 어깨를 낚아챘다.\n몸이 땅으로 패대기쳐지고, 어둠 속에 횃불빛만 어지럽게 출렁였다.\n\n【Bad End : 탈출 실패】",
+      "type": "main",
+      "choices": [
+        {
+          "text": "정신이 아득해진다"
+        }
+      ],
+      "effects": {
+        "special_effects": {
+          "force_gameover": true
+        }
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_15",
+      "text": "쇠사슬이 끊어지듯, 옆 옥의 문을 벌컥 열자─\n안에서 웅크려 있던 포로들이 눈을 뒤집으며 튀어나왔다.\n한 명은 쇠사슬을 휘둘러 포졸의 얼굴을 찍었고, 다른 이는 피투성이 손톱으로 창살을 긁으며 울부짖었다.\n\n“잡아라! 이놈들 미쳤어!”\n포졸들의 고함이 복도를 뒤흔들었지만, 이미 감당할 수 없는 혼란이 터져나갔다.\n쇠사슬, 곤봉, 맨주먹이 뒤엉키며, 어둠 속은 아수라장으로 변해갔다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "소란에 편승한다",
+          "next": {
+            "scene_id": "scn_main_3_government_break_16"
+          }
+        }
+      ],
+      "effects": {
+        "exp": {
+          "wisdom": 1
+        },
+        "set_flags": ["noise_office"]
+      }
+    },
+    {
+      "id": "scn_main_3_government_break_16",
+      "text": "당신은 곧장 혼란의 틈을 파고들었다.\n소년이 배를 움켜쥐고 웃으며 뒤따랐다.\n“푸하하! 내가 뭐랬어, 신참! 이런 난장판이 제일 좋은 기회라니까!”\n\n여자는 날카롭게 당신을 잡아끌며 소리쳤다.\n“이 소란 오래 못 가! 잡히고 싶지 않으면 빨리 움직여!”\n\n사내는 굵은 팔로 몰려드는 그림자를 밀쳐내며 버텼다.\n“…뒤는 맡겨라. 앞으로만 가!”\n\n난장판이 된 옥사를 등지고, 당신은 동료들과 함께 혼돈의 틈을 뚫고 어둠 속으로 몸을 던졌다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "관아 밖으로 나간다",
+          "next": {
+            "scene_id": "scn_main_3_escape_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_main_3_escape_1",
+      "text": "뒤편 관아의 마당은 여전히 고함과 횃불로 들끓고 있었다.  \n불빛이 이리저리 흔들리는 사이, 여자가 짧게 숨을 고르며 말했다.\n“…여기서 더 같이 가면 위험해. 붙잡히고 싶지 않으면 흩어져야 해.”\n\n사내는 고개를 돌려 굵은 숨을 내쉬면서도 짧게 덧붙였다.\n“…제대로 이별 인사도 못하고 헤어지는군.”\n“이 아저씨 은근 정이 많다니깐. 덕분에 재밌었어, 기회되면 또 보자고!”\n소년은 피식 웃으며 뒤로 물러나더니, 손을 흔들었다.\n\n세 사람은 곧장 어둠 속으로 흩어졌다.\n횃불빛과 고함이 뒤엉키는 와중에, 당신의 발걸음도 또 다른 그림자 속으로 파고들었다.",
+      "type": "main",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "condition": {
+        "flags": {
+          "in": ["noise_office"]
+        }
+      },
+      "conditional_text": [
+        {
+          "text": "뒤편 관아는 고요했지만, 긴장은 여전히 목을 죄고 있었다.\n조금만 늦었더라면 모든 게 무너졌을 것이다.\n\n여자가 주위를 살피다 낮게 내뱉었다.\n“…여기서 더 움직이긴 위험해. 각자 흩어지는 게 안전해.”\n\n사내는 잠시 머뭇거리더니, 굵은 숨과 함께 고개를 끄덕였다.\n“…제대로 이별 인사도 못하고 헤어지는군.”\n\n소년은 그 말에 킥 하고 웃더니, 두 손을 툭 털며 말했다.\n“이 아저씨 은근 정이 많다니깐. 덕분에 재밌었어, 기회되면 또 보자고!”\n\n잠시 스친 눈빛을 끝으로, 세 사람은 어둠 속으로 흩어졌다.",
+          "condition": {
+            "flags": {
+              "not_in": ["noise_office"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scn_event_tiger_1",
+      "text": "한낮의 햇살이 내리쬐는 고개 마루.\n풀숲이 요란하게 흔들리더니,\n호랑이 한 마리가 길을 막아섰다.\n\n[[tiger_day]]\n\n줄무늬 가죽이 햇빛에 번들거렸다.\n그때, 낮고 거친 포효가 울려 퍼졌다.\n\n“크르르릉…!”",
+      "type": "event",
+      "choices": [
+        {
+          "text": "떡을 준다",
+          "next": {
+            "scene_id": "scn_event_tiger_3"
+          },
+          "condition": {
+            "$and": [
+              {
+                "items": {
+                  "rice_cake": {
+                    "min": 1
+                  }
+                }
+              },
+              {
+                "skills": {
+                  "affinity": 0
+                }
+              }
+            ],
+            "items": {
+              "rice_cake": {
+                "min": 1
+              }
+            },
+            "skills": {
+              "affinity": 0
+            }
+          }
+        },
+        {
+          "text": "떡을 준다",
+          "next": {
+            "scene_id": "scn_event_tiger_2"
+          },
+          "condition": {
+            "items": {
+              "rice_cake": {
+                "min": 1
+              }
+            },
+            "skills": {
+              "affinity": {
+                "min": 1
+              }
+            }
+          }
+        },
+        {
+          "text": "싸운다",
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_event_tiger_fight_1"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_tiger_fight_2"
+            },
+            "modifier": {
+              "stats": {
+                "strength": {
+                  "per_unit": 0.04
+                }
+              },
+              "skills": {
+                "martial_arts": {
+                  "per_unit": 0.075
+                }
+              },
+              "items": {
+                "sword": {
+                  "per_unit": 0.075
+                }
+              }
+            }
+          }
+        },
+        {
+          "text": "도망친다",
+          "probability": {
+            "base_rate": 0.2,
+            "success_next": {
+              "scene_id": "scn_event_tiger_leave_1"
+            },
+            "failure_next": {
+              "scene_id": "scn_event_tiger_leave_2"
+            },
+            "modifier": {
+              "stats": {
+                "agility": {
+                  "per_unit": 0.04
+                }
+              },
+              "skills": {
+                "running": {
+                  "per_unit": 0.075
+                }
+              }
+            }
+          }
+        }
+      ],
+      "random_selectable": true
+    },
+    {
+      "id": "scn_event_tiger_2",
+      "text": "당신이 떡을 꺼내 조심스레 내밀자,\n호랑이의 눈빛이 잠시 흔들렸다.\n\n커다란 발이 다가와, 떡을 툭 집어갔다.\n이빨 사이로 떡을 씹는 소리가 거칠게 흘러나왔다.\n\n잠시 뒤, 호랑이는 낮게 숨을 내뱉더니\n당신을 곁눈질로 바라보고는\n천천히 몸을 돌려 숲속으로 사라졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "items": {
+          "rice_cake": -1
+        },
+        "exp": {
+          "skills": {
+            "affinity": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_tiger_3",
+      "text": "당신은 떡을 꺼내 호랑이 앞에 내밀었다.\n하얀 떡이 햇빛에 반짝였지만,\n호랑이의 눈빛은 미동도 없었다.\n\n순간, 굵은 포효가 터졌다.\n떡은 풀밭에 나뒹굴었고,\n호랑이는 그대로 달려들었다.\n\n날카로운 이빨이 살을 파고들며,\n짧은 비명이 산길에 흩어졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "affinity": 1
+          }
+        },
+        "health": -1,
+        "items": {
+          "rice_cake": -1
+        }
+      }
+    },
+    {
+      "id": "scn_event_tiger_fight_1",
+      "text": "호랑이가 굵은 발톱을 세우며 달려들었다.\n숨결마다 뜨거운 피비린내가 뒤엉켰다.\n\n순간, 온힘을 다해 무기를 휘둘렀다.\n날카로운 파열음이 터지고, 호랑이의 몸이 옆으로 비틀렸다.\n\n거친 숨을 내뱉으며, 짐승은 쓰러졌다.\n피에 젖은 줄무늬가 흙바닥 위에 늘어졌다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          },
+          "strength": 1
+        },
+        "items": {
+          "raw_meat": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_tiger_fight_2",
+      "text": "호랑이가 굵은 발톱을 세우며 달려들었다.\n무기를 들어 막았지만, 압도적인 힘에 팔이 휘청였다.\n\n순식간에 몸이 밀려나며, 날카로운 발톱이 옆구리를 할퀴었다.\n피가 튀고, 숨이 거칠게 끊겼다.\n\n사납게 울부짖는 호랑이 앞에서\n다리는 힘을 잃을 뻔했지만,\n이를 악물고 몸을 돌려 산길 아래로 달렸다.\n\n뒤에서 호랑이의 포효가 메아리쳤다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "conditional_text": [
+        {
+          "text": "호랑이가 굵은 발톱을 세우며 달려들었다.\n무기를 들어 막았지만, 압도적인 힘에 팔이 휘청였다.\n\n순식간에 몸이 밀려나며, 날카로운 발톱이 옆구리를 할퀴었다.\n피가 튀고, 숨이 거칠게 끊겼다.\n\n사납게 울부짖는 호랑이 앞에서\n다리는 힘을 잃고 주저앉았다.",
+          "condition": {
+            "health": 0
+          }
+        }
+      ],
+      "effects": {
+        "health": -1,
+        "exp": {
+          "skills": {
+            "martial_arts": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "scn_event_tiger_leave_1",
+      "text": "호랑이가 낮게 으르렁이며 몸을 움찔였다.\n그 순간, 발걸음을 돌려 전속력으로 달렸다.\n\n풀잎이 튀어 오르고, 산길이 눈앞에서 어지럽게 흘러갔다.\n\n뒤에서 굵은 포효가 퍼져왔지만,\n숨이 가쁘게 도망친 끝에 당신은 간신히 고개 마루를 벗어날 수 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "effects": {
+        "exp": {
+          "skills": {
+            "running": 1
+          },
+          "agility": 1
+        }
+      }
+    },
+    {
+      "id": "scn_event_tiger_leave_2",
+      "text": "당신은 몸을 돌려 산길을 내달렸다.\n그러나 뒤에서 땅을 울리는 발걸음이 순식간에 따라붙었다.\n\n거친 숨결이 목덜미를 스쳤고,\n굵은 발톱이 어깨를 할퀴며 불꽃 같은 통증이 번졌다.\n\n비틀거리며 나아가던 몸이 바위에 부딪혀 굴러떨어졌다.\n숨이 막히는 고통 속에서도 이를 악물고 다시 일어섰다.\n\n뒤에서 호랑이의 포효가 터졌지만,\n다친 몸을 이끌고 간신히 숲 어귀를 벗어날 수 있었다.",
+      "type": "event",
+      "choices": [
+        {
+          "text": "가던 길을 계속 간다"
+        }
+      ],
+      "conditional_text": [
+        {
+          "text": "당신은 몸을 돌려 산길을 내달렸다.  \n그러나 뒤에서 땅을 울리는 발걸음이 순식간에 따라붙었다.\n\n거친 숨결이 목덜미를 스쳤고,  \n굵은 발톱이 어깨를 할퀴며 불꽃 같은 통증이 번졌다.\n\n비틀거리며 나아가던 몸이 바위에 부딪혀 굴러떨어졌다.  \n숨이 막히는 고통 속에서 당신의 의식이 점점 멀어진다.",
+          "condition": {
+            "health": 0
+          }
+        }
+      ]
+    }
+  ]
+}

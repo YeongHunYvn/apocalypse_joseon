@@ -1,0 +1,11 @@
+{
+  "karma": {
+    "id": "karma",
+    "description": "남을 \b돕거나 해를 끼치는 행동이 쌓여 남는 업보",
+    "category": "resource",
+    "defaultValue": 0,
+    "minValue": -10,
+    "maxValue": 10,
+    "persist": false
+  }
+}

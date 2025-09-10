@@ -1,0 +1,44 @@
+{
+  "hunger": {
+    "id": "hunger",
+    "displayName": "배고픔",
+    "description": "허기를 느껴 힘이 줄어든다",
+    "temporary": true,
+    "category": "negative"
+  },
+  "tired": {
+    "id": "tired",
+    "displayName": "피곤함",
+    "description": "휴식이 필요할 정도로 지쳐있다",
+    "temporary": true,
+    "category": "negative"
+  },
+  "injury": {
+    "id": "injury",
+    "displayName": "상처",
+    "description": "몸에 손상이 있어 고통이 지속되고 있다",
+    "temporary": true,
+    "category": "negative"
+  },
+  "poisoned": {
+    "id": "poisoned",
+    "displayName": "중독",
+    "description": "해로운 독이 몸안에 퍼져 정신이 흐릿하다",
+    "temporary": true,
+    "category": "negative"
+  },
+  "fog_light": {
+    "id": "fog_light",
+    "displayName": "옅은 안개",
+    "description": "가벼운 안개가 흩어져 길 위를 은근히 가린다",
+    "temporary": true,
+    "category": "neutral"
+  },
+  "fog_strong": {
+    "id": "fog_strong",
+    "displayName": "짙은 안개",
+    "description": "두터운 안개가 내려앉아 앞길을 어둡게 막는다",
+    "temporary": true,
+    "category": "neutral"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run type-check:*)",
+      "Bash(node:*)",
+      "Bash(npm test:*)",
+      "Bash(npm start)",
+      "Bash(npx expo start:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "additionalDirectories": [
+      "C:\\c\\develop\\git"
+    ]
+  }
+}

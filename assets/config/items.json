@@ -1,0 +1,102 @@
+{
+  "sword": {
+    "id": "sword",
+    "name": "검",
+    "description": "묵직한 무게가 느껴지는 철제 검",
+    "category": "equipments",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 1,
+    "rarity": "common"
+  },
+  "identity_tag": {
+    "id": "identity_tag",
+    "name": "호패",
+    "description": "표면에 글자가 새겨진 나무 패, 신분을 증명할 수 있다",
+    "category": "tools",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 1,
+    "rarity": "common"
+  },
+  "herb": {
+    "id": "herb",
+    "name": "약초",
+    "description": "몸에 좋은 것이 입엔 쓰다",
+    "category": "foods",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 99,
+    "rarity": "common"
+  },
+  "rice_cake": {
+    "id": "rice_cake",
+    "name": "떡",
+    "description": "쫄깃한 식감이 특징인 인기 간식",
+    "category": "foods",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 99,
+    "rarity": "common"
+  },
+  "rice_ball": {
+    "id": "rice_ball",
+    "name": "주먹밥",
+    "description": "간단하지만 든든한 식사, 밥 냄새와 고소한 김 향이 어우러진다",
+    "category": "foods",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 99,
+    "rarity": "common"
+  },
+  "jerky": {
+    "id": "jerky",
+    "name": "육포",
+    "description": "오래 보관할 수 있도록 말린 고기, 영원히 사랑받을 것이다",
+    "category": "foods",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 99,
+    "rarity": "common"
+  },
+  "soothing_pill": {
+    "id": "soothing_pill",
+    "name": "청심환",
+    "description": "씹었을 때 퍼지는 강한 쓴맛이 정신을 또렷하게 만든다",
+    "category": "foods",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 99,
+    "rarity": "common"
+  },
+  "tea_leaf": {
+    "id": "tea_leaf",
+    "name": "찻잎",
+    "description": "뜨거운 물에 우려 마시는 잎사귀, 마음을 가라앉힌다",
+    "category": "foods",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 99,
+    "rarity": "common"
+  },
+  "raw_meat": {
+    "id": "raw_meat",
+    "name": "생고기",
+    "description": "갓 잡은 짐승의 고기",
+    "category": "misc",
+    "persist": true,
+    "defaultQuantity": 1,
+    "maxStack": 99,
+    "rarity": "common"
+  },
+  "fish": {
+    "id": "fish",
+    "name": "물고기",
+    "description": "강물에서 건져 올린 작은 생선",
+    "category": "misc",
+    "persist": false,
+    "defaultQuantity": 1,
+    "maxStack": 99,
+    "rarity": "common"
+  }
+}

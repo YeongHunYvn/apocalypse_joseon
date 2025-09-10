@@ -1,0 +1,260 @@
+{
+  "martial_arts": {
+    "id": "martial_arts",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "싸움의 기본",
+        "description": "맨몸이든 무기든, 힘을 실어 제대로 때릴 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "무술",
+        "description": "몸이 먼저 반응할 만큼 싸움에 익숙해졌다",
+        "exp": 10
+      },
+      {
+        "name": "전투",
+        "description": "싸움이 기술을 넘어 하나의 움직임이 된다.",
+        "exp": 10
+      }
+    ]
+  },
+  "intimidation": {
+    "id": "intimidation",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "으름장",
+        "description": "말과 행동으로 억지로 겁을 줄 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "위협",
+        "description": "강한 기세로 상대를 주눅들게 만들 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "위압",
+        "description": "말없이도 상대의 기를 꺾을 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "running": {
+    "id": "running",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "달리기",
+        "description": "멈추지 않고 오래 달릴 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "전력 질주",
+        "description": "있는 힘을 모두 실어 누구보다 빠르게 달릴 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "sneak": {
+    "id": "sneak",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "숨기",
+        "description": "어둠이나 구조물 뒤에 몸을 숨길 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "은신",
+        "description": "발소리와 기척을 지워 시야에서 벗어날 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "기척 차단",
+        "description": "주변에 있어도 존재 자체를 감지하기 어렵다",
+        "exp": 10
+      }
+    ]
+  },
+  "steal": {
+    "id": "steal",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "소매치기",
+        "description": "방심한 틈을 타 작은 물건을 훔칠 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "절도",
+        "description": "큰 물건도 들키지 않고 손에 넣을 수 있다",
+        "exp": 100
+      }
+    ]
+  },
+  "talismanry": {
+    "id": "talismanry",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "부적술",
+        "description": "정해진 방식대로 부적을 사용해 효과를 낼 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "능숙한 부적술",
+        "description": "상황에 맞게 부적을 다르게 활용할 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "부적사",
+        "description": "부적의 힘을 자유롭게 다루고 응용할 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "neo_confucianism": {
+    "id": "neo_confucianism",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "글 읽는 눈",
+        "description": "글과 말 속의 뜻을 이해하고 정리할 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "성리학",
+        "description": "이치에 맞게 말하고 행동할 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "affinity": {
+    "id": "affinity",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "친근함",
+        "description": "처음 만난 사람과도 쉽게 어울릴 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "친화력",
+        "description": "누구와도 금세 마음의 거리를 좁힐 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "모두의 호감",
+        "description": "사람과 동물 모두에게 자연스레 호감을 살 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "speechcraft": {
+    "id": "speechcraft",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "말재주",
+        "description": "상황에 맞게 어색하지 않게 말을 이어갈 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "화술",
+        "description": "말로 상대의 생각이나 흐름을 바꿀 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "달변가",
+        "description": "말 한마디로 분위기와 흐름을 바꿀 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "observation": {
+    "id": "observation",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "눈썰미",
+        "description": "겉모습의 특징이나 변화를 쉽게 알아챌 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "관찰력",
+        "description": "사소한 단서나 행동의 의미를 놓치지 않는다",
+        "exp": 10
+      },
+      {
+        "name": "통찰",
+        "description": "겉으로 드러나지 않은 의도나 흐름을 짚어낼 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "dexterity": {
+    "id": "dexterity",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "손놀림",
+        "description": "단순한 도구나 장치를 정확하게 다룰 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "손재주",
+        "description": "섬세한 작업도 실수 없이 해낼 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "장인 정신",
+        "description": "복잡한 장치나 구조물도 능숙하게 다룰 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "intuition": {
+    "id": "intuition",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "예민한 감각",
+        "description": "미세한 분위기나 기류를 감지할 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "직감",
+        "description": "말로 설명되지 않는 흐름을 알아차릴 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "예지",
+        "description": "머뭇거릴 틈 없이 결과를 먼저 떠올릴 수 있다",
+        "exp": 10
+      }
+    ]
+  },
+  "survival_skills": {
+    "id": "survival_skills",
+    "persist": false,
+    "ranks": [
+      {
+        "name": "자급자족",
+        "description": "자연 속에서도 혼자 끼니를 해결하고 쉴 곳을 마련할 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "생존 기술",
+        "description": "다양한 상황에 맞춰 생활 기반을 꾸릴 수 있다",
+        "exp": 10
+      },
+      {
+        "name": "생활의 달인",
+        "description": "어떤 환경에서도 스스로 살아갈 수 있다",
+        "exp": 10
+      }
+    ]
+  }
+}
