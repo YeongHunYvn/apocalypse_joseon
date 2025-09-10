@@ -91,7 +91,7 @@ const ScrollContainer = forwardRef<ScrollContainerRef, ScrollContainerProps>(
         ref={scrollViewRef}
         onScroll={handleScroll}
         onContentSizeChange={handleContentSizeChange}
-        scrollEventThrottle={16} // 60fps로 스크롤 이벤트 수신
+        scrollEventThrottle={33} // 30fps에 맞춰 스크롤 이벤트 수신
         {...defaultPerformanceConfig}
         {...scrollViewProps}
       >

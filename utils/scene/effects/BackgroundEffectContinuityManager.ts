@@ -65,7 +65,7 @@ export class BackgroundEffectContinuityManager {
   private constructor() {
     this.performanceMetrics = {
       memoryUsage: 0,
-      averageFps: 60,
+      averageFps: 30,
       renderTime: 0,
       lastMeasured: Date.now(),
     };
@@ -122,9 +122,12 @@ export class BackgroundEffectContinuityManager {
     }
 
     // FPS 추정 (실제 구현에서는 requestAnimationFrame 사용)
+    // 기본 타겟을 30fps로 가정하고, 활성 효과 시 약간의 비용을 반영
+    const targetFps = 30;
+    const headroom = this.currentEffect?.isActive ? -3 : 0; // 활성 효과면 약간 낮게
     this.performanceMetrics.averageFps = Math.max(
-      30,
-      Math.min(60, 60 - (this.currentEffect?.isActive ? 5 : 0))
+      15,
+      Math.min(60, targetFps + headroom)
     );
 
     this.performanceMetrics.lastMeasured = Date.now();

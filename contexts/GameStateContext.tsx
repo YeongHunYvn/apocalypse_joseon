@@ -14,6 +14,7 @@ import { checkGameOver } from '../utils/scene';
 import { SceneEngine } from '../utils/sceneEngine';
 import { initializeChapterBasedSceneEngine } from '../utils/sceneLoader';
 import { Logger } from '../utils/system/Logger';
+import { Platform } from 'react-native';
 
 import { gameReducer } from './GameStateReducer';
 
@@ -132,11 +133,14 @@ export function GameStateProvider({ children }: GameStateProviderProps) {
     const initEngine = async () => {
       try {
         // 챕터 서비스 생성 (환경에 따라 설정)
-        const useServer = process.env.NODE_ENV === 'production';
+        const useServer =
+          Platform.OS === 'web' && process.env.NODE_ENV === 'production';
         Logger.info('[GameStateContext]', 'ChapterService 생성 요청');
         const chapterService = ChapterServiceFactory.create(
           useServer,
-          process.env.REACT_APP_API_BASE_URL || '/api/chapters'
+          (process.env.EXPO_PUBLIC_API_BASE_URL ||
+            process.env.REACT_APP_API_BASE_URL ||
+            '/api/chapters') as string
         );
 
         // 챕터 기반 씬 엔진 초기화

@@ -3,12 +3,21 @@ import { Chapter, GameState, Scene } from '../types';
 import { ChapterServiceFactory } from './chapterService';
 import { SceneEngine } from './sceneEngine';
 import { Logger } from './system/Logger';
+import { Platform } from 'react-native';
 
 // 챕터 서비스 인스턴스 (환경에 따라 설정)
 Logger.info('[SceneLoader]', '📌 ChapterService 생성 요청');
+
+// 네이티브 앱(iOS/Android)에서는 로컬 챕터 사용, 웹+프로덕션에서만 서버 사용
+const useServer = Platform.OS === 'web' && process.env.NODE_ENV === 'production';
+const apiBaseUrl =
+  process.env.EXPO_PUBLIC_API_BASE_URL ||
+  process.env.REACT_APP_API_BASE_URL ||
+  '/api/chapters';
+
 const chapterService = ChapterServiceFactory.create(
-  process.env.NODE_ENV === 'production', // 프로덕션에서는 서버 사용
-  process.env.REACT_APP_API_BASE_URL || '/api/chapters'
+  useServer,
+  useServer ? apiBaseUrl : undefined
 );
 
 // 전역 씬 캐시는 챕터 스코프 설계에서 사용하지 않습니다.

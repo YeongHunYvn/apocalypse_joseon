@@ -14,7 +14,7 @@ export const TRANSITION_PHASES = {
   FADE_IN: 300,
 
   /** 씬 업데이트 반영 대기 시간 (ms) */
-  SCENE_UPDATE_DELAY: 16, // ~1 frame at 60fps
+  SCENE_UPDATE_DELAY: 33, // ~1 frame at 30fps
 
   /** 에러 복구 대기 시간 (ms) */
   ERROR_RECOVERY_DELAY: 1000,
